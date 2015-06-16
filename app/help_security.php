@@ -98,7 +98,6 @@ $(function(){
 })
 </script>
 
-
 <SCRIPT language="javascript" type="text/javascript">
 var  resizeTimer = null;
 jQuery(document).ready(function(){
@@ -257,7 +256,7 @@ $(document).ready(function(){
     <td width="0.5%" align="right"><img src="images/v1/jiao2.png" width="9" height="44" /></td>
   </tr>
 </table>
-			
+
 <div class=d450><table border=0 cellpadding=0 cellspacing=0 >
 <tr class=t><td></td><td>&nbsp;</td><td></td></tr>
 <tr class=mm><td class=ml><img src='images/comm/t.gif'></td>
@@ -299,6 +298,7 @@ $(document).ready(function(){
 </td><td class=mr><img src='images/comm/t.gif'></td></tr>
 <tr class=b><td class=bl></td><td class=bm>&nbsp;</td><td class=br></td></tr></table>
 </div>
+
 <div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">
 <tr><td align="left">浏览器建议：首选IE 8.0浏览器，其次为火狐浏览器。</td></tr>
 </table></td></tr><tr><td></td></tr></table></div>

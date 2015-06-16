@@ -7,13 +7,13 @@ if(function_exists('date_default_timezone_set')) {
 @date_default_timezone_set('Etc/GMT-8');
 }
 
-$conn = mysql_pconnect("localhost","root","root");
+$conn = mysql_pconnect("littlemonk.net","root","shl850325");
 if (!$conn)
   {
   die('Could not connect: '.mysql_error());
   }
 
-mysql_select_db("anqiermei" );
+mysql_select_db("shijue");
 mysql_query( "SET NAMES 'utf8'" );
 
 $sqlzz = "select * from ssc_config";

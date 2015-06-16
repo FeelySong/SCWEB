@@ -127,7 +127,7 @@ $(function(){
 <DIV ID='main_box_s2'><DIV class='icons_mb2'></DIV>当前位置: <A href="/" target='_top'><?php echo $webname;?></a> - 修改用户 </DIV>
 <br/><STYLE>
 .ct2 .nl{width:14%;}
-.tab-div-s2 .bd{width:806px;_width:804px;*+margin-top:0px;}
+.tab-div-s2 .bd{width:806px;_width:804px;*margin-top:0px;}
 #tabbar-div-s2 .tab-back {*margin-top:7px;*height:32px;*overflow:hidden}
 .tabbar-div-s3{margin-left:12px;}
 .tabbar-div-s3 .tab-front {margin:0px 3px 0px 3px;}

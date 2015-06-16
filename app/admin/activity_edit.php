@@ -72,7 +72,7 @@ function SubChk(){
     </tr>
   <tr>
     <td height="430" class="t_Edit_caption">活动规则</td>
-    <td class="t_Edit_td"><input type="hidden" name="content1" value="<?=$hdgz?>"><IFRAME ID="eWebEditor1" src="ewebeditor/ewebeditor.htm?id=content1&style=light" frameborder="0" scrolling="no" width="600" height="400"></IFRAME></td>
+    <td class="t_Edit_td"><input type="hidden" name="content1" value="<?=$hdgz?>"><IFRAME ID="eWebEditor1" src="eWebEditor/ewebeditor.htm?id=content1&style=light" frameborder="0" scrolling="no" width="600" height="400"></IFRAME></td>
   </tr>
   </table>
 <table width="500">

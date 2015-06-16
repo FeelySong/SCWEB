@@ -131,7 +131,7 @@ a{text-decoration: none;color: #000;}
 .rc_con_ti table .nl{font-weight: bold;text-align: right;padding-right: 15px;}
 .title_menu { overflow: hidden;position:absolute; right:10px; background:url(../images/other.gif) no-repeat left -300px; text-align:center; width:80px; height:32px; line-height:32px; color:#fff; padding:0 0 0 24px; cursor:pointer;}
 .title_menu a{text-decoration: none;color: #FFF;}
-.title_menu input{border: 0;background: none;color: #FFF;margin:7px 0 0 -7px;_margin:7px 0 0 -15px;+margin:7px 0 0 -15px;margin-top:9px\9;cursor: pointer;}
+.title_menu input{border: 0;background: none;color: #FFF;margin:7px 0 0 -7px;_margin:7px 0 0 -15px;margin:7px 0 0 -15px;margin-top:9px\9;cursor: pointer;}
 .userpoint{display: none\9;}
 /* 系统信息 */
 .system .rc_con_ti { padding:10px 30px 20px 30px;}

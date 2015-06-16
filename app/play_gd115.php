@@ -11,7 +11,7 @@ $lottery="广东十一选五";
 $sqls="select * from ssc_nums where cid='8' and endtime>='".date("H:i:s")."' order by id asc limit 1";
 $rss=mysql_query($sqls) or  die("数据库修改出错1".mysql_error());
 $nums=mysql_num_rows($rss);
-$dymd=date("ymd");
+$dymd=date("Ymd");
 $dymd2=date("Y-m-d");
 if($nums==0){
 	$sqls="select * from ssc_nums where cid='8' and endtime>='".date("H:i:s")."' order by id asc limit 1";
@@ -183,7 +183,7 @@ code_sp : ';',
                                                   dyprize:[{"level":1,"prize":[{"point":"<?=$rebate[249]/100?>","prize":<?=$rate[265][0]?>},{"point":0,"prize":<?=floor($rate[265][0]*(1+$rebate[249]/90)*10)/10?>}]}],
                                                   modes:[{modeid:1,name:'元',rate:1},{modeid:2,name:'角',rate:0.1},{modeid:3,name:'分',rate:0.01}],
                                                   desc:'前三直选单式'
-                                                }<?php if($zt[250]=="1"){echo ",";}?><?php }?><?php if($zt[250]=="1"){?>{methoddesc:'从0-9中任意选择3个或3个以上号码。',
+                                                }<?php if($zt[250]=="1"){echo ",";}?><?php }?><?php if($zt[250]=="1"){?>{methoddesc:'从0-9中任意选择3个或3个以上号码.',
 methodhelp:'从01-11中共11个号码中选择3个号码，所选号码与当期顺序摇出的5个号码中的前3个号码相同，顺序不限，即为中奖。',
                                     selectarea:{
                                                type   : 'digital',
@@ -649,7 +649,7 @@ if($nums==0){
                                     <a class="gct_menu_yl" href='history_code.php?id=8' target="_blank"></a>                                </div>
                             </div>
                             <div class="gct_r">
-                                <h3>广东十一选五  第 <b><span class=nn id="lt_gethistorycode"><?=substr($rowc['issue'],-8)?></span> </b> 期 
+                                <h3>广东十一选五  第 <b><span class=nn id="lt_gethistorycode"><?=$rowc['issue']?></span> </b> 期 
 								<span id="lt_opentimebox" style="display:none;">&nbsp;&nbsp;<span id="waitopendesc">等待开奖</span>&nbsp;<span style="color:#F9CE46;" id="lt_opentimeleft" ></span></span><span id="lt_opentimebox2" style="display:none; color:#F9CE46;"><strong>&nbsp;&nbsp;正在开奖</strong></span></h3>
 								
 								<div style="display:none;" class="tad" id="showadvbox"><a href="promotion_center.php"><img src='images/v1/ad.jpg' border="0" /></a></div>

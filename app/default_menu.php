@@ -91,8 +91,8 @@ if($flag=="getmoney"){
      
      
    </dl>
-   <dt><div style="height:25px; text-align:center;"><a href="http://175.41.17.206/1.rar" target="_blank"><img src="images/v1/down.gif" border="0" /></a></div>
-   </dt>
+   <!--<dt><div style="height:25px; text-align:center;"><a href="http://175.41.17.206/1.rar" target="_blank"><img src="images/v1/down.gif" border="0" /></a></div>
+   </dt>-->
 </div><br/>
 
 <script language="JavaScript">

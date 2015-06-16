@@ -1,81 +1,81 @@
 <?php
 header("Content-type:text/html; charset=gb2312"); 
 
-//Ìá½»µØÖ·
+//æäº¤åœ°å€
 if($_POST['test'] == '1')
 {
-	$form_url = 'https://pay.ips.net.cn/ipayment.aspx'; //²âÊÔ
+	$form_url = 'https://pay.ips.net.cn/ipayment.aspx'; //æµ‹è¯•
 }
 else
 {
-	$form_url = 'https://pay.ips.com.cn/ipayment.aspx'; //ÕýÊ½
+	$form_url = 'https://pay.ips.com.cn/ipayment.aspx'; //æ­£å¼
 }
 
-//ÉÌ»§ºÅ
+//å•†æˆ·å·
 $Mer_code = $_POST['Mer_code'];
 
-//ÉÌ»§Ö¤Êé£ºµÇÂ½http://merchant.ips.com.cn/ÉÌ»§ºóÌ¨ÏÂÔØµÄÉÌ»§Ö¤ÊéÄÚÈÝ
+//å•†æˆ·è¯ä¹¦ï¼šç™»é™†http://merchant.ips.com.cn/å•†æˆ·åŽå°ä¸‹è½½çš„å•†æˆ·è¯ä¹¦å†…å®¹
 $Mer_key = $_POST['Mer_key'];
 
-//ÉÌ»§¶©µ¥±àºÅ
+//å•†æˆ·è®¢å•ç¼–å·
 $Billno = $_POST['Billno'];
 
-//¶©µ¥½ð¶î(±£Áô2Î»Ð¡Êý)
+//è®¢å•é‡‘é¢(ä¿ç•™2ä½å°æ•°)
 $Amount = number_format($_POST['Amount'], 2, '.', '');
 
-//¶©µ¥ÈÕÆÚ
+//è®¢å•æ—¥æœŸ
 $Date = $_POST['Date'];
 
-//±ÒÖÖ
+//å¸ç§
 $Currency_Type = $_POST['Currency_Type'];
 
-//Ö§¸¶¿¨ÖÖ
+//æ”¯ä»˜å¡ç§
 $Gateway_Type = $_POST['Gateway_Type'];
 
-//ÓïÑÔ
+//è¯­è¨€
 $Lang = $_POST['Lang'];
 
-//Ö§¸¶½á¹û³É¹¦·µ»ØµÄÉÌ»§URL
+//æ”¯ä»˜ç»“æžœæˆåŠŸè¿”å›žçš„å•†æˆ·URL
 $Merchanturl = $_POST['Merchanturl'];
 
-//Ö§¸¶½á¹ûÊ§°Ü·µ»ØµÄÉÌ»§URL
+//æ”¯ä»˜ç»“æžœå¤±è´¥è¿”å›žçš„å•†æˆ·URL
 $FailUrl = $_POST['FailUrl'];
 
-//Ö§¸¶½á¹û´íÎó·µ»ØµÄÉÌ»§URL
+//æ”¯ä»˜ç»“æžœé”™è¯¯è¿”å›žçš„å•†æˆ·URL
 $ErrorUrl = "";
 
-//ÉÌ»§Êý¾Ý°ü
+//å•†æˆ·æ•°æ®åŒ…
 $Attach = $_POST['Attach'];
 
-//ÏÔÊ¾½ð¶î
+//æ˜¾ç¤ºé‡‘é¢
 $DispAmount = $_POST['DispAmount'];
 
-//¶©µ¥Ö§¸¶½Ó¿Ú¼ÓÃÜ·½Ê½
+//è®¢å•æ”¯ä»˜æŽ¥å£åŠ å¯†æ–¹å¼
 $OrderEncodeType = $_POST['OrderEncodeType'];
 
-//½»Ò×·µ»Ø½Ó¿Ú¼ÓÃÜ·½Ê½ 
+//äº¤æ˜“è¿”å›žæŽ¥å£åŠ å¯†æ–¹å¼ 
 $RetEncodeType = $_POST['RetEncodeType'];
 
-//·µ»Ø·½Ê½
+//è¿”å›žæ–¹å¼
 $Rettype = $_POST['Rettype'];
 
-//Server to Server ·µ»ØÒ³ÃæURL
+//Server to Server è¿”å›žé¡µé¢URL
 $ServerUrl = $_POST['ServerUrl'];
-//OrderEncodeTypeÉèÖÃÎª5£¬ÇÒÔÚ¶©µ¥Ö§¸¶½Ó¿ÚµÄSignmd5×Ö¶ÎÖÐ´æ·ÅMD5ÕªÒªÈÏÖ¤ÐÅÏ¢¡£
-//½»Ò×Ìá½»½Ó¿ÚMD5ÕªÒªÈÏÖ¤µÄÃ÷ÎÄ°´ÕÕÖ¸¶¨²ÎÊýÃûÓëÖµµÄÄÚÈÝÁ¬½ÓÆðÀ´£¬½«Ö¤ÊéÍ¬Ê±Æ´½Óµ½²ÎÊý×Ö·û´®Î²²¿½øÐÐmd5¼ÓÃÜÖ®ºóÔÙ×ª»»³ÉÐ¡Ð´£¬Ã÷ÎÄÐÅÏ¢ÈçÏÂ£º
-//billno+¡¾¶©µ¥±àºÅ¡¿+ currencytype +¡¾±ÒÖÖ¡¿+ amount +¡¾¶©µ¥½ð¶î¡¿+ date +¡¾¶©µ¥ÈÕÆÚ¡¿+ orderencodetype +¡¾¶©µ¥Ö§¸¶½Ó¿Ú¼ÓÃÜ·½Ê½¡¿+¡¾ÉÌ»§ÄÚ²¿Ö¤Êé×Ö·û´®¡¿
-//Àý:(billno000001000123currencytypeRMBamount13.45date20031205orderencodetype5GDgLwwdK270Qj1w4xho8lyTpRQZV9Jm5x4NwWOTThUa4fMhEBK9jOXFrKRT6xhlJuU2FEa89ov0ryyjfJuuPkcGzO5CeVx5ZIrkkt1aBlZV36ySvHOMcNv8rncRiy3DQ)
-//¶©µ¥Ö§¸¶½Ó¿ÚµÄMd5ÕªÒª£¬Ô­ÎÄ=¶©µ¥ºÅ+½ð¶î+ÈÕÆÚ+Ö§¸¶±ÒÖÖ+ÉÌ»§Ö¤Êé 
+//OrderEncodeTypeè®¾ç½®ä¸º5ï¼Œä¸”åœ¨è®¢å•æ”¯ä»˜æŽ¥å£çš„Signmd5å­—æ®µä¸­å­˜æ”¾MD5æ‘˜è¦è®¤è¯ä¿¡æ¯ã€‚
+//äº¤æ˜“æäº¤æŽ¥å£MD5æ‘˜è¦è®¤è¯çš„æ˜Žæ–‡æŒ‰ç…§æŒ‡å®šå‚æ•°åä¸Žå€¼çš„å†…å®¹è¿žæŽ¥èµ·æ¥ï¼Œå°†è¯ä¹¦åŒæ—¶æ‹¼æŽ¥åˆ°å‚æ•°å­—ç¬¦ä¸²å°¾éƒ¨è¿›è¡Œmd5åŠ å¯†ä¹‹åŽå†è½¬æ¢æˆå°å†™ï¼Œæ˜Žæ–‡ä¿¡æ¯å¦‚ä¸‹ï¼š
+//billno+ã€è®¢å•ç¼–å·ã€‘+ currencytype +ã€å¸ç§ã€‘+ amount +ã€è®¢å•é‡‘é¢ã€‘+ date +ã€è®¢å•æ—¥æœŸã€‘+ orderencodetype +ã€è®¢å•æ”¯ä»˜æŽ¥å£åŠ å¯†æ–¹å¼ã€‘+ã€å•†æˆ·å†…éƒ¨è¯ä¹¦å­—ç¬¦ä¸²ã€‘
+//ä¾‹:(billno000001000123currencytypeRMBamount13.45date20031205orderencodetype5GDgLwwdK270Qj1w4xho8lyTpRQZV9Jm5x4NwWOTThUa4fMhEBK9jOXFrKRT6xhlJuU2FEa89ov0ryyjfJuuPkcGzO5CeVx5ZIrkkt1aBlZV36ySvHOMcNv8rncRiy3DQ)
+//è®¢å•æ”¯ä»˜æŽ¥å£çš„Md5æ‘˜è¦ï¼ŒåŽŸæ–‡=è®¢å•å·+é‡‘é¢+æ—¥æœŸ+æ”¯ä»˜å¸ç§+å•†æˆ·è¯ä¹¦ 
 $orge = 'billno'.$Billno.'currencytype'.$Currency_Type.'amount'.$Amount.'date'.$Date.'orderencodetype'.$OrderEncodeType.$Mer_key ;
-//echo 'Ã÷ÎÄ:'.$orge ;
+//echo 'æ˜Žæ–‡:'.$orge ;
 //$SignMD5 = md5('billno'.$Billno.'currencytype'.$Currency_Type.'amount'.$Amount.'date'.$Date.'orderencodetype'.$OrderEncodeType.$Mer_key);
 $SignMD5 = md5($orge) ;
-//echo 'ÃÜÎÄ:'.$SignMD5 ;
+//echo 'å¯†æ–‡:'.$SignMD5 ;
 //sleep(20);
 ?>
 <html>
   <head>
-    <title>Ìø×ª......</title>
+    <title>è·³è½¬......</title>
     <meta http-equiv="content-Type" content="text/html; charset=gb2312" />
   </head>
   <body>

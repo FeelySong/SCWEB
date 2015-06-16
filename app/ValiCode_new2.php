@@ -1,149 +1,43 @@
 <?php
-/**
- * ÑéÖ¤Í¼Æ¬
- *
- * @version        $Id: vdimgck.php 1 15:21 2010Äê7ÔÂ5ÈÕ tianya $
- */
-$config = array(
-    'font_size'   => 18,
-    'img_height'  => 28,
-    'word_type'  => 1,   // 1:Êı×Ö  2:Ó¢ÎÄ   3:µ¥´Ê
-    'img_width'   => 105,
-    'use_boder'   => TRUE,
-    'font_file'   => 'ggbi.ttf',
-    'wordlist_file'   => 'words.txt',
-    'filter_type' => 5);
-$sessSavePath = "sessions/";
-
-// Session±£´æÂ·¾¶
-//if(is_writeable($sessSavePath) && is_readable($sessSavePath)){ session_save_path($sessSavePath); }
-//if(!empty($cfg_domain_cookie)) session_set_cookie_params(0,'/',$cfg_domain_cookie);
-
-if (!echo_validate_image($config))
-{
-    // Èç¹û²»³É¹¦Ôò³õÊ¼»¯Ò»¸öÄ¬ÈÏÑéÖ¤Âë
-    @session_start();
-    $_SESSION['valicode'] = strtolower('3825');
-    $im = @imagecreatefromjpeg('vdcode.jpg');
-    header("Pragma:no-cache\r\n");
-    header("Cache-Control:no-cache\r\n");
-    header("Expires:0\r\n");
-    imagejpeg($im);
-    imagedestroy($im);
+if(!isset($_SESSION)){ //åˆ¤æ–­sessionæ˜¯å¦å¼€å¯
+session_start(); //å¼€å¯å°±session
 }
+$width=70; //å¸ƒç”»å®½åº¦
+$height=25; //å¸ƒç”»é«˜åº¦
+$length=4;//éªŒè¯ç é•¿åº¦
+$code=getcode($length); //è·å–éšæœºå­—ç¬¦ä¸²
+$_SESSION['valicode'] = $code;
 
-function echo_validate_image( $config = array() )
-{
-    @session_start();
-    
-    //Ö÷Òª²ÎÊı
-    $font_size   = isset($config['font_size']) ? $config['font_size'] : 14;
-    $img_height  = isset($config['img_height']) ? $config['img_height'] : 24;
-    $img_width   = isset($config['img_width']) ? $config['img_width'] : 68;
-    $font_file   = isset($config['font_file']) ? $config['font_file'] : PATH_DATA.'ggbi.ttf';
-    $use_boder   = isset($config['use_boder']) ? $config['use_boder'] : TRUE;
-    $filter_type = isset($config['filter_type']) ? $config['filter_type'] : 0;
-    
-    //´´½¨Í¼Æ¬£¬²¢ÉèÖÃ±³¾°É«
-    $im = @imagecreate($img_width, $img_height);
-    imagecolorallocate($im, 255,255,255);
-    
-    //ÎÄ×ÖËæ»úÑÕÉ«
-    $fontColor[]  = imagecolorallocate($im, 0x15, 0x15, 0x15);
-    $fontColor[]  = imagecolorallocate($im, 0x95, 0x1e, 0x04);
-    $fontColor[]  = imagecolorallocate($im, 0x93, 0x14, 0xa9);
-    $fontColor[]  = imagecolorallocate($im, 0x12, 0x81, 0x0a);
-    $fontColor[]  = imagecolorallocate($im, 0x06, 0x3a, 0xd5);
-    
-    //»ñÈ¡Ëæ»ú×Ö·û
-    $rndstring  = '';
-
-        for($i=0; $i<4; $i++)
-        {
-            if ($config['word_type'] == 1)
-            {
-                $c = chr(mt_rand(48, 57));
-            } else if($config['word_type'] == 2)
-            { 
-                $c = chr(mt_rand(65, 90));
-                if( $c=='I' ) $c = 'P';
-                if( $c=='O' ) $c = 'N';
-            }
-            $rndstring .= $c;
-        }
-
-    $_SESSION['valicode'] = strtolower($rndstring);
-
-    $rndcodelen = strlen($rndstring);
-
-    //±³¾°ºáÏß
-    $lineColor1 = imagecolorallocate($im, 0xda, 0xd9, 0xd1);
-    for($j=3; $j<=$img_height-3; $j=$j+3)
-    {
-        imageline($im, 2, $j, $img_width - 2, $j, $lineColor1);
-    }
-    
-    //±³¾°ÊúÏß
-    $lineColor2 = imagecolorallocate($im, 0xda,0xd9,0xd1);
-    for($j=2;$j<100;$j=$j+6)
-    {
-        imageline($im, $j, 0, $j+8, $img_height, $lineColor2);
-    }
-
-    //»­±ß¿ò
-    if( $use_boder && $filter_type == 0 )
-    {
-        $bordercolor = imagecolorallocate($im, 0x9d, 0x9e, 0x96);
-        imagerectangle($im, 0, 0, $img_width-1, $img_height-1, $bordercolor);
-    }
-    
-    //Êä³öÎÄ×Ö
-    $lastc = '';
-    for($i=0;$i<$rndcodelen;$i++)
-    {
-        $bc = mt_rand(0, 1);
-        $rndstring[$i] = strtoupper($rndstring[$i]);
-        $c_fontColor = $fontColor[mt_rand(0,4)];
-        $y_pos = $i==0 ? 18 : $i*($font_size+2)+18;
-        $c = mt_rand(0, 15);
-//h 19¸Ä 15
-        @imagettftext($im, $font_size, $c, $y_pos, 23, $c_fontColor, $font_file, $rndstring[$i]);
-        $lastc = $rndstring[$i];
-    }
-    
-    //Í¼ÏóĞ§¹û
-    switch($filter_type)
-    {
-        case 1:
-            imagefilter ( $im, IMG_FILTER_NEGATE);
-            break;
-        case 2:
-            imagefilter ( $im, IMG_FILTER_EMBOSS);
-            break;
-        case 3:
-            imagefilter ( $im, IMG_FILTER_EDGEDETECT);
-            break;
-        default:
-            break;
-    }
-
-    header("Pragma:no-cache\r\n");
-    header("Cache-Control:no-cache\r\n");
-    header("Expires:0\r\n");
-
-    //Êä³öÌØ¶¨ÀàĞÍµÄÍ¼Æ¬¸ñÊ½£¬ÓÅÏÈ¼¶Îª gif -> jpg ->png
-    //dump(function_exists("imagejpeg"));
-    
-    if(function_exists("imagejpeg"))
-    {
-        header("content-type:image/jpeg\r\n");
-        imagejpeg($im);
-    }
-    else
-    {
-        header("content-type:image/png\r\n");
-        imagepng($im);
-    }
-    imagedestroy($im);
-    exit();
+$img=imagecreate($width,$height);
+$bgcolor=imagecolorallocate($img,240,240,240);
+$rectangelcolor=imagecolorallocate($img,150,150,150);
+imagerectangle($img,1,1,$width-1,$height-1,$rectangelcolor);//ç”»è¾¹æ¡†
+for($i=0;$i<$length;$i++){//å¾ªç¯å†™å­—
+$codecolor=imagecolorallocate($img,mt_rand(50,200),mt_rand(50,128),mt_rand(50,200));
+$angle=rand(-20,20);
+$charx=$i*15+8;
+$chary=($height+14)/2+rand(-1,1);
+imagettftext($img,15,$angle,$charx,$chary,$codecolor,'arial.ttf',$code[$i]);
 }
+for($i=0;$i<20;$i++){//å¾ªç¯ç”»çº¿
+$linecolor=imagecolorallocate($img,mt_rand(0,250),mt_rand(0,250),mt_rand(0,250));
+$linex=mt_rand(1,$width-1);
+$liney=mt_rand(1,$height-1);
+imageline($img,$linex,$liney,$linex+mt_rand(0,4)-2,$liney+mt_rand(0,4)-2,$linecolor);
+}
+for($i=0;$i<100;$i++){//å¾ªç¯ç”»ç‚¹
+$pointcolor=imagecolorallocate($img,mt_rand(0,250),mt_rand(0,250),mt_rand(0,250));
+imagesetpixel($img,mt_rand(1,$width-1),mt_rand(1,$height-1),$pointcolor);
+}
+function getcode($length){//ç”Ÿæˆphpéšæœºæ•°
+$pattern = '1234567890ABCDEFGHIJKLOMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz ';//å­—ç¬¦æ± 
+for($i=0;$i<$length;$i++) {
+$key .= $pattern{mt_rand(0,35)};
+}
+return $key;
+
+}
+ob_clean();
+header('Content-type:image/png');
+imagepng($img);
+?>

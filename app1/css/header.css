@@ -1,0 +1,55 @@
+@charset "utf-8";
+body { background:url(/images/header/bg.gif) repeat-x left -100px;margin: 0;padding: 0;}
+img{border: 0;}
+#header {position:relative;height: 93px; min-width:980px; _width:expression((document.documentElement.clientWidth||document.body.clientWidth)<980?"980px":""); background: url(/images/header/bg.gif) no-repeat left top; text-align: left; }
+.logo { padding-top: 18px; padding-left: 36px; text-align: left; float:left; }
+.menu { height: 71px; padding:15px 0 5px 0; _padding:0; _margin:14px 0 5px 0; float:right; width:734px;}
+.menu a { float: right; display: block; width: 77px; height: 71px;  margin-right:13px; }
+.menu a.active, .menu a:hover { background: url(/images/header/m_bg.gif) no-repeat left top; }
+.menu a span { display:block; width: 77px; height: 71px; background: url(/images/header/menu.png) no-repeat 20px 4px; _background: url(/images/header/menu.gif) no-repeat 20px 4px;}
+.menu a.account_autosave span { background-position: -68px 4px;}
+.menu a.history_playlist span { background-position: -155px 4px;}
+.menu a.users_list span { background-position: -244px 4px;}
+.menu a.report_list span { background-position: -331px 4px;}
+.menu a.users_info span { background-position: -419px 4px;}
+.menu a.help_general span { background-position: -507px 4px;}
+.menu a.csonline_addnew span { background-position: -595px 4px;}
+.clear{clear: both;margin: 0;padding: 0;}
+.h_line { background: url(/images/header/h_line.gif) no-repeat center center; height: 1px; clear: both; border-bottom:1px solid #1e1e1e; _line-height:0; _font-size:0; }
+.left_sidbar {width: 10px; background: url(/images/left_sid_cen.gif) repeat-y left top;cursor: pointer; }
+.left_sidbar .lsid_cen { background: url(/images/left_sid_off.gif) no-repeat center center; height: 5px; width: 4px; padding-right: 3px; padding-left: 3px; }
+.left_sidbar .lsid_cenr { background: url(/images/left_sid_on.gif) no-repeat center center; height: 5px; width: 4px; padding-right: 3px; padding-left: 3px;}
+#leftbox{width:175px; height:100%;}
+#leftframe,#mainframe{overflow:visible;}
+.testlogo{position:absolute;top:5px;left:200px;}
+/*中奖公告样式开始*/
+.bonusnotice{color: #FFF;font-size: 12px;background:url(/images/news_bg.gif) repeat-x left -10px;height: 35px;line-height: 35px; overflow: hidden;}
+.nocticetitle{float: left;color: #F9CE46;margin-left: 8px;font-size: 13px;margin-right: 5px;}
+#zjtgul{width: 600px;overflow: hidden;}
+.marqueediv{float: left; cursor: pointer;width: 600px;}
+.bonus{color: #F9CE46;padding: 0 2px;}
+.username{color: #B2FF00;padding: 0 2px;}
+.issue{color: #CC0;padding: 0 2px;}
+
+
+#nav_t{width:800px; overflow:hidden; float:right;}
+#nav_t ul{width:884px; overflow:hidden; margin-top:12px;}
+#nav_t ul li{float:left; width:78px; text-align:center;color:#fff; display:block; height:72px; margin-right:20px;}
+#nav_t ul li a{display:block; height:72px;cursor:pointer;}
+#nav_t ul li a span{display:block;color:#fff;height:72px;font-size:14px;}
+#nav_1{ background:url(../images/v1/nav.png) no-repeat;}
+#nav_1:hover{background:url(../images/v1/nav_.png) no-repeat;}
+#nav_2{ background:url(../images/v1/nav.png) no-repeat -93px 0px;}
+#nav_2:hover{background:url(../images/v1/nav_.png) no-repeat -93px 0px;}
+#nav_3{ background:url(../images/v1/nav.png) no-repeat -187px 0px;}
+#nav_3:hover{background:url(../images/v1/nav_.png) no-repeat -187px 0px;}
+#nav_4{ background:url(../images/v1/nav.png) no-repeat -284px 0px;}
+#nav_4:hover{background:url(../images/v1/nav_.png) no-repeat -284px 0px;}
+#nav_5{ background:url(../images/v1/nav.png) no-repeat -384px 0px;}
+#nav_5:hover{background:url(../images/v1/nav_.png) no-repeat -384px 0px;}
+#nav_6{ background:url(../images/v1/nav.png) no-repeat -483px 0px;}
+#nav_6:hover{background:url(../images/v1/nav_.png) no-repeat -483px 0px;}
+#nav_7{ background:url(../images/v1/nav.png) no-repeat -586px 0px;}
+#nav_7:hover{background:url(../images/v1/nav_.png) no-repeat -586px 0px;}
+#nav_8{ background:url(../images/v1/nav.png) no-repeat -683px 0px;}
+#nav_8:hover{background:url(../images/v1/nav_.png) no-repeat -683px 0px;}

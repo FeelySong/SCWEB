@@ -196,7 +196,7 @@ function resizewindow(){
 <SPAN class="action-span1"><DIV class='tubiao'></DIV>当前位置: <A href="/" target='_top'><?php echo $webname;?></a> - 奖金详情  </SPAN><DIV style="clear:both"></DIV></H1>
 
 <br/><STYLE>
-.tab-div-s2 .bd{width:100%;_width:100%;*+margin-top:0px;}
+.tab-div-s2 .bd{width:100%;_width:100%;*margin-top:0px;}
 #tabbar-div-s2 .tab-front .content{padding:0px 4px;}
 #tabbar-div-s2 .tab-back {*margin-top:7px;*height:32px;*overflow:hidden}
 #tabbar-div-s2 .tab-back .content{padding:0px 4px;}

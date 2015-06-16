@@ -45,7 +45,7 @@ a:active{
 	line-height:32px;   /*ff下有效(图片垂直居中)*/
 }
 .m_line img{
-	margin-top:expression(( 32 - this.height ) / 2);   /*ie下有效(图片垂直居中)*/
+	margin-top:expression((32 - this.height)/2);   /*ie下有效(图片垂直居中)*/
 }
 .m_li_a{
 	float:left; width:114px; line-height:32px; text-align:center; padding-top:3px; font-weight:bold;

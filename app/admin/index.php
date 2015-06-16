@@ -22,7 +22,7 @@ if(empty($dduser)){
 <HEAD>
 <META content="IE=7.0000" http-equiv="X-UA-Compatible">
 <TITLE>管理后台——欢迎光临商城</TITLE>
-<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="CSS/logstyle.css">
+<META content="text/html; charset=utf-8" http-equiv=Content-Type><LINK rel=stylesheet type=text/css href="css/logstyle.css">
 <script type="text/javascript">
 function refreshimg(){
 document.getElementById("vcsImg").src="ValiCode_new.php?"+  new Date().getTime();
@@ -34,7 +34,7 @@ document.forms[0].submit()
 </script>
 </HEAD>
 <BODY>
-<FORM id=form1 method=post action=Login.php>
+<FORM id=form1 method=post action=login.php>
 <DIV class=container>
 <DIV class=loim>
 <DIV 
@@ -57,7 +57,7 @@ id=RequiredFieldValidator2 class=fontsiz controltovalidate="Password" errormessa
 <DIV class=content_2>
 <DIV class=content_2_bd>
 <DIV class=bd_3></DIV>
-<DIV class=bd_4><INPUT style="WIDTH: 90px;background-color:transparent;border:0px" id=Code name=Code><img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码"></DIV>
+<DIV class=bd_4><INPUT style="WIDTH: 90px;background-color:transparent;border:0px" id=Code name=Code><img id="vcsImg" src="ValiCode_new.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码"></DIV>
 <DIV class=clearer></DIV></DIV></DIV>
 <DIV style="WIDTH: 395px" class=content_3><DIV class=content_31><A id=LinkButton1 class=footer_1 href='javascript:submit()'> </A></div> 
 <DIV class=content_32><A class=footer_1 onclick=javascript:form1.reset(); href="javascript:void(0);"> </A></div> <SPAN style="COLOR: red" 

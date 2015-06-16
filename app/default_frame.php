@@ -2,11 +2,12 @@
 session_start();
 error_reporting(0);
 require_once 'conn.php';
-
+/*
 if($_SESSION["sess_uid"]=="" || $_SESSION["username"] =="" || $_SESSION["valid"]==""){
 	echo "<script language=javascript>window.location='default_logout.php';</script>";
 	exit;
 }
+*/
 
 $flag=$_REQUEST['flag'];
 
@@ -159,8 +160,8 @@ html {overflow: hidden;}
 	<td id="topbox">
 		<div id="header-div" >
 		 <div id="submenu-div2">
-		  <div id="logo-div" onclick="javascript:window.top.location='./';"><img src="images/v1/logo.png" width="183" height="52"  title="返回首页"/></div>
-		  <div id="nav_t">
+                    <div id="logo-div" onclick="javascript:window.top.location='./';"><img src="images/v1/logo.png" width="183" height="40"  title="返回首页"/></div>
+                    <div id="nav_t">
 	   <ul>
 	      <li id="nav_1"><a href="default_frame.php"><span>&nbsp;</span></a></li>
 		  <li id="nav_2" TITLE='填写充值申请' ALT='填写充值申请'><a target="mainframe" href="account_autosave.php"><span>&nbsp;</span></a></li>
@@ -170,36 +171,40 @@ html {overflow: hidden;}
 		  <li id="nav_6" TITLE='查看各彩种奖金' ALT='查看各彩种奖金'><a target="mainframe" href="users_info.php"><span>&nbsp;</span></a></li>
 		  <li id="nav_7" TITLE='常见问题说明' ALT='常见问题说明'><a target="mainframe" href="help_general.php"><span>&nbsp;</span></a></li>
 		  <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="csonline_addnew.php" target="_blank"><span>&nbsp;</span></a></li>
+                  <!--<li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="http://wpa.qq.com/msgrd?V=3&uin=1975418259&Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&Menu=yes&from=discuz" target="_blank"><span>&nbsp;</span></a></li>-->
 	   </ul></div>
   </div>
 </div></td></tr></table>
 
-
 <table width="100%" border="0" cellpadding="0" cellspacing="0">
-            <tr>
-                <td valign="top" id="leftbox" rowspan="2" style="width:160px; height:100%; background: #D94733;">
-                    <iframe name="leftframe" id="leftframe" frameborder="0" width="100%" height="100%" scrolling="auto" style="overflow:visible;" src="default_menu.php"></iframe>
-                </td>
-                <td valign="middle" id="dragbox" class="left_sidbar" rowspan="2">
-                    <div id="dragbutton" class="lsid_cen"></div>
-                </td>
-                <td id="noticebox" valign="top"><!--<div class="gonggaodiv"><div>
-				<span class="nocticetitle">最新大奖名单:</span>
-<ul id="zjtgul">
-<?php
-	while ($row = mysql_fetch_array($rs)){
-		echo "<li>恭喜 【<span class=c1>".$row['nickname']."</span>】 ".$row['lottery']." <span class=c2>".$row['issue']."</span> 期, 喜中 <span class=c3>".$row['prize']."</span> 大奖!</li>";
-	}
-?>
-</ul></div></div>-->
-</td>
-            </tr>
-            <tr>
-                <td id="mainbox" valign="top">
-                    <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="auto" style="overflow:visible;" src="help_security.php"></iframe>
-                </td>
-            </tr>
-        </table>
+    <tr>
+        <td valign="top" id="leftbox" rowspan="2" style="width:180px; height:100%; background: #D94733;">
+            <iframe name="leftframe" id="leftframe" frameborder="0" width="100%" height="100%" scrolling="no"  style="overflow:hidden;" src="default_menu.php"></iframe>
+        </td>
+        <td valign="middle" id="dragbox" class="left_sidbar" rowspan="2">
+            <div id="dragbutton" class="lsid_cen"></div>
+        </td>
+        <td id="noticebox" valign="top">
+            <div class="gonggaodiv">
+                <div>
+                    <span class="nocticetitle">最新大奖名单:</span>
+                    <ul id="zjtgul">
+                        <?php
+                        while ($row = mysql_fetch_array($rs)){
+                                echo "<li>恭喜 【<span class=c1>".$row['nickname']."</span>】 ".$row['lottery']." <span class=c2>".$row['issue']."</span> 期, 喜中 <span class=c3>".$row['prize']."</span> 大奖!</li>";
+                        }
+                        ?>
+                        </ul>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td id="mainbox" valign="top">
+            <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="yes" style="overflow:hidden;" src="help_security.php"></iframe>
+        </td>
+    </tr>
+</table>
 
 <!--<table width="100%" border="0" cellpadding="0" cellspacing="0">
 	<tr>
@@ -210,9 +215,6 @@ html {overflow: hidden;}
         <iframe name="mainframe" id="mainframe" frameborder="0" width="100%" height="100%" scrolling="auto" style="overflow:visible;" src="help_security.php"></iframe></td>
     </tr>
 </table>-->
-
-
-
 </BODY>
 </HTML>
 <?php }?>

@@ -2,7 +2,7 @@
 header("Content-type:text/html; charset=gb2312"); 
 
 //----------------------------------------------------
-//  ½ÓÊÕÊý¾Ý
+//  æŽ¥æ”¶æ•°æ®
 //  Receive the data
 //----------------------------------------------------
 $billno = $_GET['billno'];
@@ -17,57 +17,57 @@ $currency_type = $_GET['Currency_type'];
 $signature = $_GET['signature'];
 
 //'----------------------------------------------------
-//'   Md5ÕªÒªÈÏÖ¤
+//'   Md5æ‘˜è¦è®¤è¯
 //'   verify  md5
 //'----------------------------------------------------
 
-//RetEncodeTypeÉèÖÃÎª17£¨MD5ÕªÒªÊý×ÖÇ©Ãû·½Ê½£©
-//½»Ò×·µ»Ø½Ó¿ÚMD5ÕªÒªÈÏÖ¤µÄÃ÷ÎÄÐÅÏ¢ÈçÏÂ£º
-//billno+¡¾¶©µ¥±àºÅ¡¿+currencytype+¡¾±ÒÖÖ¡¿+amount+¡¾¶©µ¥½ð¶î¡¿+date+¡¾¶©µ¥ÈÕÆÚ¡¿+succ+¡¾³É¹¦±êÖ¾¡¿+ipsbillno+¡¾IPS¶©µ¥±àºÅ¡¿+retencodetype +¡¾½»Ò×·µ»ØÇ©Ãû·½Ê½¡¿+¡¾ÉÌ»§ÄÚ²¿Ö¤Êé¡¿
-//Àý:(billno000001000123currencytypeRMBamount13.45date20031205succYipsbillnoNT2012082781196443retencodetype17GDgLwwdK270Qj1w4xho8lyTpRQZV9Jm5x4NwWOTThUa4fMhEBK9jOXFrKRT6xhlJuU2FEa89ov0ryyjfJuuPkcGzO5CeVx5ZIrkkt1aBlZV36ySvHOMcNv8rncRiy3DQ)
+//RetEncodeTypeè®¾ç½®ä¸º17ï¼ˆMD5æ‘˜è¦æ•°å­—ç­¾åæ–¹å¼ï¼‰
+//äº¤æ˜“è¿”å›žæŽ¥å£MD5æ‘˜è¦è®¤è¯çš„æ˜Žæ–‡ä¿¡æ¯å¦‚ä¸‹ï¼š
+//billno+ã€è®¢å•ç¼–å·ã€‘+currencytype+ã€å¸ç§ã€‘+amount+ã€è®¢å•é‡‘é¢ã€‘+date+ã€è®¢å•æ—¥æœŸã€‘+succ+ã€æˆåŠŸæ ‡å¿—ã€‘+ipsbillno+ã€IPSè®¢å•ç¼–å·ã€‘+retencodetype +ã€äº¤æ˜“è¿”å›žç­¾åæ–¹å¼ã€‘+ã€å•†æˆ·å†…éƒ¨è¯ä¹¦ã€‘
+//ä¾‹:(billno000001000123currencytypeRMBamount13.45date20031205succYipsbillnoNT2012082781196443retencodetype17GDgLwwdK270Qj1w4xho8lyTpRQZV9Jm5x4NwWOTThUa4fMhEBK9jOXFrKRT6xhlJuU2FEa89ov0ryyjfJuuPkcGzO5CeVx5ZIrkkt1aBlZV36ySvHOMcNv8rncRiy3DQ)
 
-//·µ»Ø²ÎÊýµÄ´ÎÐòÎª£º
+//è¿”å›žå‚æ•°çš„æ¬¡åºä¸ºï¼š
 //billno + mercode + amount + date + succ + msg + ipsbillno + Currecny_type + retencodetype + attach + signature + bankbillno
-//×¢2£ºµ±RetEncodeType=17Ê±£¬ÕªÒªÄÚÈÝÒÑÈ«×ª³ÉÐ¡Ð´×Ö·û£¬ÇëÔÚÑéÖ¤µÄÊ±½«ÄúÉú³ÉµÄMd5ÕªÒªÏÈ×ª³ÉÐ¡Ð´ºóÔÙ×ö±È½Ï
+//æ³¨2ï¼šå½“RetEncodeType=17æ—¶ï¼Œæ‘˜è¦å†…å®¹å·²å…¨è½¬æˆå°å†™å­—ç¬¦ï¼Œè¯·åœ¨éªŒè¯çš„æ—¶å°†æ‚¨ç”Ÿæˆçš„Md5æ‘˜è¦å…ˆè½¬æˆå°å†™åŽå†åšæ¯”è¾ƒ
 $content = 'billno'.$billno.'currencytype'.$currency_type.'amount'.$amount.'date'.$mydate.'succ'.$succ.'ipsbillno'.$ipsbillno.'retencodetype'.$retEncodeType;
-//ÇëÔÚ¸Ã×Ö¶ÎÖÐ·ÅÖÃÉÌ»§µÇÂ½merchant.ips.com.cnÏÂÔØµÄÖ¤Êé
+//è¯·åœ¨è¯¥å­—æ®µä¸­æ”¾ç½®å•†æˆ·ç™»é™†merchant.ips.com.cnä¸‹è½½çš„è¯ä¹¦
 $cert = 'GDgLwwdK270Qj1w4xho8lyTpRQZV9Jm5x4NwWOTThUa4fMhEBK9jOXFrKRT6xhlJuU2FEa89ov0ryyjfJuuPkcGzO5CeVx5ZIrkkt1aBlZV36ySvHOMcNv8rncRiy3DQ';
 $signature_1ocal = md5($content . $cert);
 
 if ($signature_1ocal == $signature)
 {
 	//----------------------------------------------------
-	//  ÅÐ¶Ï½»Ò×ÊÇ·ñ³É¹¦
+	//  åˆ¤æ–­äº¤æ˜“æ˜¯å¦æˆåŠŸ
 	//  See the successful flag of this transaction
 	//----------------------------------------------------
 	if ($succ == 'Y')
 	{
 		/**----------------------------------------------------
-		*±È½Ï·µ»ØµÄ¶©µ¥ºÅºÍ½ð¶îÓëÄúÊý¾Ý¿âÖÐµÄ½ð¶îÊÇ·ñÏà·û
+		*æ¯”è¾ƒè¿”å›žçš„è®¢å•å·å’Œé‡‘é¢ä¸Žæ‚¨æ•°æ®åº“ä¸­çš„é‡‘é¢æ˜¯å¦ç›¸ç¬¦
 		*compare the billno and amount from ips with the data recorded in your datebase
 		*----------------------------------------------------
 		
-		if(²»µÈ)
-			echo "´ÓIPS·µ»ØµÄÊý¾ÝºÍ±¾µØ¼ÇÂ¼µÄ²»·ûºÏ£¬Ê§°Ü£¡"
+		if(ä¸ç­‰)
+			echo "ä»ŽIPSè¿”å›žçš„æ•°æ®å’Œæœ¬åœ°è®°å½•çš„ä¸ç¬¦åˆï¼Œå¤±è´¥ï¼"
 			exit
 		else
 			'----------------------------------------------------
-			'½»Ò×³É¹¦£¬´¦ÀíÄúµÄÊý¾Ý¿â
+			'äº¤æ˜“æˆåŠŸï¼Œå¤„ç†æ‚¨çš„æ•°æ®åº“
 			'The transaction is successful. update your database.
 			'----------------------------------------------------
 		end if
 		**/
-		echo '½»Ò×³É¹¦';
+		echo 'äº¤æ˜“æˆåŠŸ';
 	}
 	else
 	{
-		echo '½»Ò×Ê§°Ü£¡';
+		echo 'äº¤æ˜“å¤±è´¥ï¼';
 		exit;
 	}
 }
 else
 {
-	echo 'Ç©Ãû²»ÕýÈ·£¡';
+	echo 'ç­¾åä¸æ­£ç¡®ï¼';
 	exit;
 }
 ?>

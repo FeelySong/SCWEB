@@ -600,7 +600,7 @@ jQuery(document).ready(function() {
 
 
 
-<div class="ld" STYLE='+width:100%;'>
+<div class="ld" STYLE='width:100%;'>
 <table class="lt" border="0" cellspacing="0" cellpadding="0">
 	<tr class='th'>
     <td height="43" align="center">注单编号</td>

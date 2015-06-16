@@ -820,8 +820,7 @@ while ($rowz = mysql_fetch_array($rsz)){
 				mysql_query("update ssc_bills set zt=".$signa.",prize=rates*times*".$nums." where id='".$row['id']."'");						
 			}else{
 				mysql_query("update ssc_bills set zt=".$signb.",prize=0 where id='".$row['id']."'");		
-			}			
-			/
+			}
 		}else if($mid=="197" || $mid=="231" || $mid=="265" || $mid=="357"){//115前三直选
 			if($row['type']=="input"){//单式
 				$cs=sprintf("%02d",$n1)." ".sprintf("%02d",$n2)." ".sprintf("%02d",$n3);

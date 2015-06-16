@@ -1,6 +1,11 @@
 /* CSS Document */
-body {margin:0px; background-repeat:no-repeat;background-position:center top;
-font-family:Simsun,sans-serif;font-size:12px;line-height:18px;color:#666; background:url(../images/bj.jpg);}
+body {
+    color: #666;
+    font-family: Simsun,sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    margin: 0;
+}
 div,ul,li{margin:0 auto;padding:0;}
 ul{list-style:none;}
 a{text-decoration:none;color:#666666;}
@@ -18,17 +23,17 @@ a:active {color:#FA7908;text-decoration:underline;}
 #header_tips {background: url(../images/v1/login_v1.jpg) no-repeat 0px 0px; float: right;height: 28px;width: 220px;margin-top: 18px;line-height:28px;text-align:center;}
 #header_menu {float: right;height: 33px;width: 220px;margin-top: 16px;}
 #top_line {background: url(../images/v1/login_v1.jpg) repeat-x 0px -226px;height:13px;width:100%;}
-
+/*
 #menu {height: 33px; width: 220px;}
 #menu li {width:100px;height:33px;line-height:33px;text-align:center;margin-left:5px;_margin-left:0px;display:inline;float:left;}
 #maintitle {width:678px;line-height:30px;background-color:#edeeee;color:#292A36;font-weight:bold;font-size:14px;padding-left:5px;}
-
+*/
 #reg_content {clear:both;min-height:354px;height:auto;_height:554px;width:694px;margin-top:12px;margin-right:auto;margin-left:auto;}
 #content_reg_box_top {background:url(../images/v1/login_v10.png) no-repeat 0px -95px;height: 4px;overflow: hidden;}
 #content_reg_box_center {background-image: url(../images/v1/content_reg_box_center.jpg);background-repeat: repeat-y;}
 #content_reg_box_bottom {background:url(../images/v1/login_v10.png) no-repeat 0px -107px;height:4px;overflow: hidden;}
 
-#maincontent {width:678px;height:auto;margin:20px auto -2px auto;!important margin:20px auto 0px auto;}
+#maincontent {width:678px;height:auto;margin:20px auto -2px auto; margin:20px auto 0px auto;}
 .content_reg_line {line-height:28px;height:auto;min-height:50px;_height:50px;width:633px;margin-top:1px;clear:both;}
 .form_title {line-height:28px;color:#282A35;float:left;display:inline;text-align:right;width:110px;}
 .form_word {line-height:28px;color:#666666;margin-left:5px;display:inline;vertical-align:middle;}

@@ -9,13 +9,13 @@ if(function_exists('date_default_timezone_set')) {
 
 }
 
-$conn = mysql_pconnect( "localhost", "root", "root" );
+$conn = mysql_pconnect( "littlemonk.net", "root", "shl850325" );
 if (!$conn)
   {
   die('Could not connect: ' . mysql_error());
   }
 
-mysql_select_db( "anqiermei" );
+mysql_select_db( "shijue" );
 mysql_query( "SET NAMES 'utf8'" );
 require_once 'autokja.php';
 
@@ -332,5 +332,4 @@ if (eregi('win',$Agent) && strpos($Agent, '95')) {
 }if ($browserplatform=='') {$browserplatform = "Unknown"; }  
 	return $browserplatform;  
 }  
-
 ?>

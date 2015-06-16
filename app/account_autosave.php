@@ -385,68 +385,68 @@ div .a{color:#070;
 	}
 </STYLE>
 <div class="tab-div">
-	<div id="tabbar-div">
-	   <span class="tabbar_bian1"></span>
-	   <span class="tabbar_bianz">
-		  自动充值
-			</span>
-		<span class="tabbar_bian2"></span>
-	    	</div>
+    <div id="tabbar-div">
+       <span class="tabbar_bian1"></span>
+            <span class="tabbar_bianz">
+                 自动充值
+            </span>
+        <span class="tabbar_bian2"></span>
+    </div>
 
 <div class="ld" style='width:99%;margin:0px 0px 0px 0px;'>
 <table width="100%" class="ct" border="0" cellspacing="0" cellpadding="0">
-<form action="account_autosave2.php" method="post" name="drawform" id="drawform" onsubmit="return checkForm(this)">
-<input type="hidden" name="flag" value="confirm" />
-<tr>
-	<td class="nl"><font color="#FF3300">自动充值使用需知:</font></td>
-	<td STYLE='line-height:23px;padding:5px 0px'>
-	<!--每天的充值处理时间为：<font style="font-size:16px;color:#F30;font-weight:bold;">9:00-2:00</font><br />//-->
-	每天的充值处理时间为：<font style="font-size:16px;color:#F30;font-weight:bold;">早上 9:00 至 晚上 22:00</font><br/>
-    充值金额低于<font style="font-size:16px;color:#F30;font-weight:bold;">100</font>&nbsp;不享受“充值即返手续费”的优惠<br/>
-	充值后, <font color='#ff0000'>请手动刷新您的余额</font>及查看相关帐变信息,若超过1分钟未上分,请与客服联系<br/>
-	选择充值银行, 填写充值金额, 点击 <font color=#0000FF>[下一步]</font> 后, 将有详细文字说明及<font color=red>充值演示</font>	</td>
-</tr>
-<tr>
-	<td class="nl">充值银行: </td>
-    <td style='height:60px;'>
- <?php
-$dd=date("H:i:s");
-$sqla = "select * from ssc_banks WHERE zt='1' and types='1' and ((cztimemin>cztimemax and (cztimemax>'".$dd."' or cztimemin<'".$dd."')) or (cztimemin<cztimemax and cztimemin<'".$dd."' and cztimemax>'".$dd."')) order by sort desc";
-$rsa = mysql_query($sqla);
-while ($rowa = mysql_fetch_array($rsa)){
-?>    	   	
-    <input type="radio" id='bank_<?=$rowa['tid']?>' name="bankinfo" value="<?=$rowa['tid']?>"  onclick="changbank(this)" />&nbsp;<label for='bank_<?=$rowa['tid']?>'><img STYLE='cursor:pointer;' src="images/banks/<?=$rowa['tid']?>.jpg" /></label>&nbsp;&nbsp;&nbsp;
-<?php }?>
-    	&nbsp;&nbsp;<span style="color:red; display:none"><input type="radio" name="bankinfo" value="" /></span>    </td>
-</tr>
-<?php if($cardnums>0){?>
-<tr id="msg_bank_3" style="display:none;">
-	<td class="nl">您要汇款的银行卡</td>
-    <td style="font-size:12px; font-weight:bold; color:#FF0000; line-height:20px;">
-    <select name="mybank" id="mybank">
-		<?php while ($rowb = mysql_fetch_array($rsb)){?>
-				<option value="<?=$rowb['id']?>"><?=$rowb['bankname']?> | 银行卡尾号: <?=substr($rowb['cardno'],-4)?> </option>
+    <form action="account_autosave2.php" method="post" name="drawform" id="drawform" onsubmit="return checkForm(this)">
+        <input type="hidden" name="flag" value="confirm" />
+        <tr>
+            <td class="nl">充值银行: </td>
+            <td style='height:60px;'>
+         <?php
+        $dd=date("H:i:s");
+        $sqla = "select * from ssc_banks WHERE zt='1' and types='1' and ((cztimemin>cztimemax and (cztimemax>'".$dd."' or cztimemin<'".$dd."')) or (cztimemin<cztimemax and cztimemin<'".$dd."' and cztimemax>'".$dd."')) order by sort desc";
+        $rsa = mysql_query($sqla);
+        while ($rowa = mysql_fetch_array($rsa)){
+        ?>    	   	
+            <input type="radio" id='bank_<?=$rowa['tid']?>' name="bankinfo" value="<?=$rowa['tid']?>"  onclick="changbank(this)" />&nbsp;<label for='bank_<?=$rowa['tid']?>'><img STYLE='cursor:pointer;' src="images/banks/<?=$rowa['tid']?>.jpg" /></label>&nbsp;&nbsp;&nbsp;
         <?php }?>
-    		    </select>&nbsp;&nbsp;
-    使用建行充值时，必须使用您选择的建行卡进行汇款，否则不能到账！
-    </td>
-</tr>
-<?php }?>
-<tr>
-	<td class="nl">充值金额: </td>
-    <td style='height:66px;'><input type="text" name="real_money" id="real_money" maxlength="10" onkeyup="showPaymentFee();" />
-	&nbsp;&nbsp;<span style="color:red;"></span> ( 单笔充值限额：最低：&nbsp;<font style="color:#FF3300" id="loadmin">&nbsp;</font>&nbsp;元，最高：&nbsp;<font style="color:#FF3300" id="loadmax">&nbsp;</font>&nbsp;元 ) </td>
-</tr>
-<tr>
-	<td class="nl">充值金额(大写): </td>
-    <td style='height:60px;'>&nbsp;<span id="chineseMoney"></span><input type="hidden" id="hiddenchinese" /></td>
-</tr>
-<tr>
-	<td class="nl"></td>
-	<td height="30"><br/><button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
-	&nbsp;&nbsp;&nbsp;&nbsp;<br/><br/></td>
-</tr>
-</form>
+                &nbsp;&nbsp;<span style="color:red; display:none"><input type="radio" name="bankinfo" value="" /></span>    </td>
+        </tr>
+        <?php if($cardnums>0){?>
+        <tr id="msg_bank_3" style="display:none;">
+                <td class="nl">您要汇款的银行卡</td>
+            <td style="font-size:12px; font-weight:bold; color:#FF0000; line-height:20px;">
+            <select name="mybank" id="mybank">
+                        <?php while ($rowb = mysql_fetch_array($rsb)){?>
+                                        <option value="<?=$rowb['id']?>"><?=$rowb['bankname']?> | 银行卡尾号: <?=substr($rowb['cardno'],-4)?> </option>
+                <?php }?>
+                            </select>&nbsp;&nbsp;
+            使用建行充值时，必须使用您选择的建行卡进行汇款，否则不能到账！
+            </td>
+        </tr>
+        <?php }?>
+        <tr>
+                <td class="nl">充值金额: </td>
+            <td style='height:66px;'><input type="text" name="real_money" id="real_money" maxlength="10" onkeyup="showPaymentFee();" />
+                &nbsp;&nbsp;<span style="color:red;"></span> ( 单笔充值限额：最低：&nbsp;<font style="color:#FF3300" id="loadmin">&nbsp;</font>&nbsp;元，最高：&nbsp;<font style="color:#FF3300" id="loadmax">&nbsp;</font>&nbsp;元 ) </td>
+        </tr>
+        <tr>
+                <td class="nl">充值金额(大写): </td>
+            <td style='height:60px;'>&nbsp;<span id="chineseMoney"></span><input type="hidden" id="hiddenchinese" /></td>
+        </tr>
+        <tr>
+            <td class="nl"></td>
+            <td height="30"><br/><button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
+            &nbsp;&nbsp;&nbsp;&nbsp;<br/><br/></td>
+        </tr>
+        <!--
+        <tr>
+            <td class="nl"><font color="#FF3300">自动充值提示:</font></td>
+            <td STYLE='line-height:23px;padding:5px 0px'>
+            充值金额低于<font style="font-size:16px;color:#F30;font-weight:bold;">100</font>&nbsp;不享受“充值即返手续费”的优惠<br/>
+            充值后, <font color='#ff0000'>请手动刷新您的余额</font>及查看相关帐变信息,若超过1分钟未上分,请与客服联系<br/>
+            选择充值银行, 填写充值金额, 点击 <font color=#0000FF>[下一步]</font> 后, 将有详细文字说明及<font color=red>充值演示</font>	</td>
+        </tr>
+        -->
+    </form>
 </table>
 </div>
 <div id="footer"><table width="100%" border="0" cellspacing="0" cellpadding="0"><tr><td align="center"><table align="center" width="450">

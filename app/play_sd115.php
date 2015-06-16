@@ -11,7 +11,7 @@ $lottery="十一运夺金";
 $sqls="select * from ssc_nums where cid='6' and endtime>='".date("H:i:s")."' order by id asc limit 1";
 $rss=mysql_query($sqls) or  die("数据库修改出错1".mysql_error());
 $nums=mysql_num_rows($rss);
-$dymd=date("ymd");
+$dymd=date("Ymd");
 $dymd2=date("Y-m-d");
 if($nums==0){
 	$sqls="select * from ssc_nums where cid='6' and endtime>='".date("H:i:s")."' order by id asc limit 1";
@@ -651,7 +651,7 @@ if($nums==0){
                                     <a class="gct_menu_yl" href='history_code.php?id=6' target="_blank"></a>                                </div>
                             </div>
                             <div class="gct_r">
-                                <h3>十一运夺金  第 <b><span class=nn id="lt_gethistorycode"><?=substr($rowc['issue'],-8)?></span> </b> 期 
+                                <h3>十一运夺金  第 <b><span class=nn id="lt_gethistorycode"><?=$rowc['issue']?></span> </b> 期 
 								<span id="lt_opentimebox" style="display:none;">&nbsp;&nbsp;<span id="waitopendesc">等待开奖</span>&nbsp;<span style="color:#F9CE46;" id="lt_opentimeleft" ></span></span><span id="lt_opentimebox2" style="display:none; color:#F9CE46;"><strong>&nbsp;&nbsp;正在开奖</strong></span></h3>
 								
 								<div style="display:none;" class="tad" id="showadvbox"><a href="promotion_center.php"><img src='images/v1/ad.jpg' border="0" /></a></div>

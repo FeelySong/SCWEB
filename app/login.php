@@ -77,7 +77,7 @@ function LoginNow()
 			<div id="content_reg_box_center">
 				<div id="maintitle">通行证登录</div>	
 				<div id="maincontent">	
-        	<div style="width:684px; margin:auto;">
+        	<div style="width:500px; margin:auto;">
 					<form name='login' method="post" action="login2.php" onSubmit="javascript:LoginNow(); return false;">
             		<div style="width:100%;text-align:center;">
                     	<font color="#FF0000"></font>

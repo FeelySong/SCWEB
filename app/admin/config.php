@@ -78,8 +78,7 @@ function SubChk(){
     
     <tr>
       <td height="40" class="t_Edit_caption">撤单手续费率</td>
-      <td class="t_Edit_td"><input name="cdrates" type="text" class="inp2" id="cdrates" onFocus="this.className='inp2a'" onBlur="this.className='inp2';" value="<?=$rs['cdrates']?>" size="20">
-%</td>
+      <td class="t_Edit_td"><input name="cdrates" type="text" class="inp2" id="cdrates" onFocus="this.className='inp2a'" onBlur="this.className='inp2';" value="<?=$rs['cdrates']?>" size="20">%</td>
     </tr>
     <tr>
       <td height="40" class="t_Edit_caption">免费撤单笔数</td>

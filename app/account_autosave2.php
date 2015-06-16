@@ -185,12 +185,12 @@ function resizewindow(){
 </tr>
 <?php if($bid==19){?>
 <tr>
-	<td class="nl">财付通付款方式：</td>
+    <td class="nl">财付通付款方式：</td>
     <td style="color:#080;">向亲朋好友付款</td>
 </tr>
 <?php }?>
 <tr>
-	<td class="nl">收款账户名：</td>
+    <td class="nl">收款账户名：</td>
     <td style="color:#333333;"><span id="copy_name_txt" style="padding-right:10px;"><?=$rowa['uname']?></span> <a href='#' TITLE='复制' onClick="javascript:copyToClipboard( 'copy_name_txt','【收款账户名】' )" ><img src="images/comm/copy.gif" border="0" />复制</a></td>
 </tr>
 <tr>

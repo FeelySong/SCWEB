@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 define('TimeZone', +8.0);
 function _GET($n) { return isset($_GET[$n]) ? $_GET[$n] : NULL; }
-function _SERVER($n) { return isset($_SERVER[$n]) ? $_SERVER[$n] : '[undefine]'; }
+f[$n]) ? $_SERVER[$n] : '[undefine]'; }
 if (_GET('act') == 'phpinfo') {
 if (function_exists('phpinfo')) phpinfo();
 else echo 'phpinfo() Function has been disabled.';
@@ -151,8 +151,7 @@ a.arrow:hover {color:#ff0000;text-decoration:none;}
 <tr>
 <td class="el">PHP Pthreads</td>
 <td class="el">ionCube Loader</td>
-<td class="el" width="25%">APC</td>
-<td class="el">Memcache</td>
+<td class="el" width="25%">AP<td class="el">Memcache</td>
 </tr>
 <tr>
 <td class="fc"><?=phpversion('Pthreads') ? YES : NO ?></td>
