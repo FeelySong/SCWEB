@@ -1,0 +1,33 @@
+﻿
+body{ padding:0px; margin:0px; background:url(../Images/beijingd.gif);}
+.container { margin:0px; padding:0px; height:auto; border-top:#1f5aa8 solid 1px;  }
+.top { margin:0px auto;width:500px; height:auto;}
+.content { margin:0 auto; width:739px; height:441px;_height:441px;_margin-top:30px;  padding:0px;}
+
+.loim{margin:0 auto;width: 1003px; height: 613px; z-index:999px; background-color:Red; background: url(../Images/dengludabg2.jpg) no-repeat;
+            background-position: center; overflow:hidden;}
+.clearer{margin:0px; padding:0px; line-height:1px; font-size:1px; height:0px; display:block;clear:both;}
+.content_1{  width:510px; height:328px; margin:0px auto; padding-top:273px}
+.content_1_top{width:464px; height:76px; margin:22px auto; margin-top:0px;}
+.content_2{ width:510px; margin:0 auto; padding:0px; height:43px;}
+.content_2_bd { margin:0px; padding:0px;  font-weight:bold; }
+.bd_1 { width:140px; float:left; padding-left:90px; height:30px; line-height:30px; color:#2f2f2f; font-size:12px; font-weight:normal;}
+.bd_2 { width:252px;float:left; padding-top:5px;}
+.bd_2 input{ display:block; float:left; height:20px; line-height:20px; border-bottom:#d9d9d9 solid 1px; border-right:#d9d9d9 solid 1px;
+              border-left:#999999 solid 1px; border-top:#999999 solid 1px;}
+.bd_3 { width:120px; float:left; padding-left:90px; height:30px; line-height:30px; color:#2f2f2f; font-size:12px; font-weight:normal;}
+.bd_4 { width:272px;float:left; padding-top:5px;}
+.bd_4 input{ display:block; float:left; height:20px; line-height:20px; border-bottom:#d9d9d9 solid 1px; border-right:#d9d9d9 solid 1px;
+              border-left:#999999 solid 1px; border-top:#999999 solid 1px;}
+.bd2_1 { width:250px; height:20px;  padding-top:2px;}
+.bd2_2 { width:90px; height:20px;  padding-top:2px;}
+.content_3{ width:510px; margin:0 auto;  padding-left:165px; text-align:center; margin-top:12px;}
+.content_31 a{ background:url(../Images/log1.jpg) no-repeat; width:68px; height:28px;
+                text-decoration:none; display:block; float:left; margin-left:25px; line-height:28px;}
+.content_32 a{ background:url(../Images/log2.jpg) no-repeat; width:68px; height:28px;
+                text-decoration:none; display:block; float:left; margin-left:25px; line-height:28px;}
+.footer_1 { font-size:12px; color:#000000; text-align: center;}
+.footer_1 p { margin:8px 0px 0px 0px; padding:0px;}
+
+.fontsiz{font-size:12px; padding-top:3px;}
+.textbox{margin:0; padding:0; border:1px solid #8EE5EE;}

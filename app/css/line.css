@@ -1,0 +1,26 @@
+.ball01{font-weight:bold;color:#FFFFFF;width:14px;height:14px;line-height:15px;background:url('../images/v1/icons.png') -43px -95px no-repeat;}
+.ball02{font-weight:bold;color:#FFFFFF;width:14px;height:14px;line-height:15px;background:url('../images/v1/icons.png') -59px -95px no-repeat;}
+.ball03{color:#000000;width:20px;height:20px;line-height:19px;background-color: #0099ff;}
+.ball04{color:#000000;width:20px;height:20px;line-height:19px;background-color: #aaffff;}
+.ball13{width:16px;height:16px;line-height:15px;color:#CCC;}
+.ball14{width:16px;height:16px;line-height:15px;color:#CCC;}
+.wdh{width:16px;height:25px;}
+.in{width:80px;border:#999 1px solid;}
+tr{text-align:center;}
+#showissue{width:53px;height:21px;border:1px solid #FFFFFF;}
+.none{background:none!important;}
+#tm{height:26px;line-height:26px;}
+#tm td{background-color:#DADADA}
+a{color:#003399;text-decoration:none}
+a:hover{text-decoration:underline}
+.div_s1{text-align:left;width:1100px;background-color:#FFF;}
+.th td{background-color:#CCC;height:22px;line-height:22px;}
+#chartsTable{background:#D0D0D0;border-collapse:0px;border-spacing:1px;}
+#chartsTable td{background-color:#FFF;}
+#chartsTable .th td{background-color:#fff094;font-weight:bold;color:#333;}
+#chartsTable .wth{width:16px;height:25px;background-color:#FEFAEB;border:0px;color:#FF3900}
+#chartsTable .issue{width:70px;height:25px;}
+#chartsTable .td0{background-color:#FFF;}
+#chartsTable .td1{background-color:#FEF;}
+#chartsTable .tb {height:22px;line-height:22px;}
+#chartsTable .tb td{color:#333}

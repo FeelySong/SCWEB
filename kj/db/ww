@@ -1,0 +1,70 @@
+CREATE DEFINER=`root`@`%` PROCEDURE shijue.`paijiang`(
+              IN n1      VARCHAR(20),
+                                IN n2      VARCHAR(20),
+                                IN n3      VARCHAR(20),
+                                IN n4      VARCHAR(20),
+                                IN n5      VARCHAR(20),
+                                IN lid     VARCHAR(20),
+                                IN issue   VARCHAR(20),
+                                IN sign    INT(1),
+        OUT test int(1)
+        )
+BEGIN
+ DECLARE signa,signb int;
+ DECLARE kjcode,kjcode_fx varchar(200);
+ DECLARE stra,strb varchar(200);
+ DECLARE na,nb varchar(20);
+ DECLARE uid_fx,regup_fx,mid_fx,mode_fx,rates_fx,times_fx varchar(20);
+ DECLARE id_fx int;
+
+
+
+ DECLARE nums,i1,i,ii int;
+
+IF sign=1 THEN
+  SET signa=1;
+  SET signb=2;
+ ELSE
+        SET signa=0;
+        SET signb=0;
+ END IF;
+ IF(lid=1 OR lid=2 OR lid=3 OR lid=4 OR lid=10) THEN
+        SET kjcode=concat(n1,n2,n3,n4,n5);
+    ELSEIF (lid=5 OR lid=9) THEN
+        SET kjcode=concat(n1,n2,n3);
+    ELSEIF (lid=6 OR lid=7 OR lid=8 OR lid=11) THEN
+        SET kjcode=concat(n1," ",n2," ",n3," ",n4," ",n5);
+ END IF;
+
+
+ WHILE EXISTS (SELECT id  FROM ssc_bills WHERE lotteryid=lid AND issue=issue AND zt=0 ORDER BY id ASC LIMIT 1)  DO
+
+  SELECT id,uid,regup,mid,mode,codes,rates,times INTO id_fx,uid_fx,regup_fx,mid_fx,mode_fx,kjcode_fx,rates_fx,times_fx FROM ssc_bills WHERE lotteryid=lid AND issue=issue AND zt=0 ORDER BY id ASC LIMIT 1;
+
+  IF (mid_fx="400" OR mid_fx="420" OR mid_fx="440" OR mid_fx="460") THEN
+
+   SET nums=0,i1=0,i=0,ii=0;
+   WHILE i1<=substrCount(kjcode_fx,'|') DO
+    SET stra=strsplit(kjcode_fx,'|',i1);
+     WHILE i<=LENGTH(stra) DO
+    SET strb=strsplit(stra,'"&"',i);
+       WHILE ii<=LENGTH(strb) DO
+                    IF (SUBSTRING(strb,i,1)=SUBSTRING(kjcode,i,1)) THEN
+                        SET nums=nums+1;
+             END IF;
+		set ii=ii+1;
+       END WHILE;
+	   set i=i+1;
+     END WHILE;
+	set i1=i1+1;
+ END WHILE;
+ IF (nums=5) THEN
+      UPDATE ssc_bills SET zt=signa,prize=rates*times WHERE id=id_fx;
+    ELSE
+    UPDATE ssc_bills SET zt=signb,prize=0 WHERE id=id_fx;
+    END IF;
+END IF;
+END WHILE;
+SET test=nums;
+SELECT test;
+END

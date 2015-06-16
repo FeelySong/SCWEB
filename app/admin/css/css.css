@@ -1,0 +1,67 @@
+/*---------------------页面基础定义----------------------------------*/
+body,td,th {
+	font-family: Tahoma, Verdana, Arial, sans-serif;
+	font-size: 12px;
+	color: #333333;
+}
+body {
+	margin-left: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+}
+
+/*---------------------链接定义----------------------------------*/
+a {
+	color: #333333;
+	text-decoration: none;
+}
+a:hover {
+	color: #FF0000;
+	text-decoration: none;
+}
+a:active{
+	color: #FF0000;
+	text-decoration: none;
+}
+
+/*---------------------菜单样式----------------------------------*/
+#menu{
+	height:32px;
+	margin-top:8px; background-color:#990000;
+}
+#menu ul{
+	margin:auto; width:778px; height:32px;
+	list-style-type:none; padding:0px; margin-top:0px; margin-bottom:0px;
+}
+.m_li{
+	float:left; width:114px; line-height:32px;  text-align:center; margin-right:-2px; margin-left:-2px;
+}
+.m_li a{
+	display:block; color:#FFFFFF; width:114px;
+}
+.m_line{
+	float:left; width:1px; height:32px;
+	line-height:32px;   /*ff下有效(图片垂直居中)*/
+}
+.m_line img{
+	margin-top:expression(( 32 - this.height ) / 2);   /*ie下有效(图片垂直居中)*/
+}
+.m_li_a{
+	float:left; width:114px; line-height:32px; text-align:center; padding-top:3px; font-weight:bold;
+	background-image:url(../images/menu_bg.jpg); position:relative; height:32px; margin-top:-3px; margin-right:-2px; margin-left:-2px;
+}
+.m_li_a a{
+	display:block; color:#FF0000; width:114px;
+}
+
+
+.smenu{
+	width:774px; margin:0px auto 0px auto; padding:0px; list-style-type:none; height:32px;
+}
+.s_li{
+	line-height:32px; width:auto; display:none; height:32px; 
+}
+.s_li_a{
+	line-height:32px; width:auto; display:block; height:32px; 
+}
