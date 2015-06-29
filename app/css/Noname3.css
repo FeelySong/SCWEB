@@ -72,7 +72,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_b { text-align:center; margin-top:30px; _margin-top:10px; }
 /*��¼ҳ������*/
 
-.banner { position: relative; overflow: auto; }
+.banner { height:285px; left: 10px; margin-top: 20px; position:relative; overflow:visible;}
     .banner li { list-style: none; }
         .banner ul li { float: left; }
 
