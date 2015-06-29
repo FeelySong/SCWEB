@@ -76,7 +76,7 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-block; line-height:34px; }
 .login_b { text-align:center; margin-top:30px; _margin-top:10px; }
 /*��¼ҳ������*/
-#main{ height:458px; left: 500px; position:relative; overflow:visible;}
+#main{ height:458px; left: 300px; position:relative; overflow:visible;}
 .login_pic01,.login_pic02,.login_pic03,.login_pic04,.login_pic05,.login_pic06, .login_pic07, .login_pic08, .login_pic09, .login_pic010, .login_pic011, .login_pic012{height:369px; display:inline-block; width:572px;}
 .login_pic01{ background:url(login_bg01.png) no-repeat;}
 .login_pic02{ background:url(login_bg02.png) no-repeat;}
