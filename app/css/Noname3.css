@@ -14,7 +14,7 @@ a:link,a:visited { color:#0F3F94; text-decoration:none;}
 a:hover { color:#F00; text-decoration:underline;}
 .l{float:left;}
 .r{float:right;}
-.wrap{width:980px; margin:0px auto;}
+.wrap{width:550px; margin:0px auto;}
 .red{ color:#F00;}
 .orange{color:#F60;}
 .blue{ color:#0f3f94;}
