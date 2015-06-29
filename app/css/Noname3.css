@@ -72,19 +72,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_b { text-align:center; margin-top:30px; _margin-top:10px; }
 /*��¼ҳ������*/
 #main{ height:285px; left: 300px; margin-top: 20px; position:relative; overflow:visible;}
-.login_pic01,.login_pic02,.login_pic03,.login_pic04,.login_pic05,.login_pic06, .login_pic07, .login_pic08, .login_pic09, .login_pic010, .login_pic011, .login_pic012{height:369px; display:inline-block; width:572px;}
-.login_pic01{ background:url(login_bg01.png) no-repeat;}
-.login_pic02{ background:url(login_bg02.png) no-repeat;}
-.login_pic03{ background:url(login_bg03.png) no-repeat;}
-.login_pic04{ background:url(login_bg04.png) no-repeat;}
-.login_pic05{ background:url(login_bg05.png) no-repeat;}
-.login_pic06{ background:url(login_bg06.png) 2px 0 no-repeat;}
-.login_pic07{ background:url(login_bg07.png) no-repeat;}
-.login_pic08{ background:url(login_bg08.png) no-repeat;}
-.login_pic09{ background:url(login_bg09.jpg) no-repeat;}
-.login_pic010{ background:url(ggimg.png) no-repeat;float:left;}
-.login_pic011{ background:url(login_bg11.png) no-repeat;}
-.login_pic012{ background:url(login_bg12.jpg) no-repeat;}
+
 
 .login_footer_ad{width: 572px; height:70px; background: url(login_footer_ad.png) no-repeat left center;}
 
