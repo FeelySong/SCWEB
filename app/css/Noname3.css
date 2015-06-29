@@ -49,7 +49,6 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 .login_box .ico_left{background-position:-16px 0; float:left;}
 .login_box .ico_right{background-position:0 0; float:right;}
 .login_box .lg_box{width:329px; margin:0 auto; float:left;}
-.login_box .top_b{ background:#e5e3e2; height:5px; overflow:hidden; line-height:0; font-size:0;}
 .login_t{ background-position:-233px -150px; padding-left:25px; font-size:14px; display:inline-block; float:left;}
 
 
@@ -131,7 +130,6 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_box .phone_login .mp_login_help{display: inline-block; height:14px; width: 14px; background:url(hz_link.png) -105px -38px no-repeat; padding-left:3px; position: relative; top:2px;  *top:0;}
 .login_box .mp_login_tips{border:1px solid #c1c48d; background:#fefbe2; position: absolute; top:-46px; right: -8px; _top:22px; padding: 5px; width: 100px; color:#000; line-height:1.2; display: none; z-index:999;}
 .login_box .mp_login_tips span{width:5px; height:6px; display: inline-block; position: absolute; background: url(hz_link.png) -125px -44px no-repeat; bottom:-6px; _top:-5px; _background-position: -131px -44px;}
-.login_box .login-ptn{ width:277px; margin:auto; border-top:#e1e0e0 solid 1px;}
 
 .tip_box{ margin:30px 10px 5px; height:28px;}
 .tip_box .cnt{background:#fff9d9 url(../images/error_2.png) 8px 8px no-repeat; border:1px solid #ffc28c; color:#F00;padding:5px 10px; text-align:left; text-indent:23px;}
