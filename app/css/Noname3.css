@@ -71,6 +71,11 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-block; line-height:34px; }
 .login_b { text-align:center; margin-top:30px; _margin-top:10px; }
 /*��¼ҳ������*/
+
+.banner { position: relative; overflow: auto; }
+    .banner li { list-style: none; }
+        .banner ul li { float: left; }
+
 #main{ height:285px; left: 300px; margin-top: 20px; position:relative; overflow:visible;}
 
 
