@@ -8,7 +8,7 @@ require_once 'conn.php';
 <HTML xmlns="http://www.w3.org/1999/xhtml">
 <HEAD>
 <META http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<TITLE>嘟嘟游戏 后台管理中心</TITLE>
+<TITLE>尚彩游戏 后台管理中心</TITLE>
 <style>
 /* Start New Product Page Design [date] */
 img{border-style:none;}
