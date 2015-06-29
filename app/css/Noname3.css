@@ -40,7 +40,7 @@ a.black:hover{color:#F00;}
 #logo a{display:block;width:229px; margin-top:10px; height:83px;text-indent:-2000em;overflow:hidden;background:url("/images/v1/logo.png") no-repeat;}
 h2{background-position:-167px -250px; display:block; width:83px; height:50px;margin:10px 0 0 10px; overflow:hidden; }
 @media screen and (-webkit-min-device-pixel-ratio:0) {h2{ margin:10px 0 0 0;}#logo a { margin-top:2px;} } 
-.nav{ float:right;margin:11px 60px 0 0;}
+.nav{ float:right;margin:60px 60px 0 0;}
 .w_right{display:block;width:100px;height:44px;}
 
 /*��¼ҳ���*/
