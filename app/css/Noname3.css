@@ -44,7 +44,7 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 .w_right{display:block;width:100px;height:44px;}
 
 /*��¼ҳ���*/
-.login_box{float:left;width:347px;background: url("../images/login_box_bg.png") 0 0 no-repeat; height: 428px; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="login_box_bg.png"); _background-image: none;}
+.login_box{float:left;width:347px;background: url("../images/login_box_bg.png") 0 0 no-repeat; height: 285px; _filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled=true, sizingMethod=noscale, src="login_box_bg.png"); _background-image: none;}
 .login_box .ico_left,.login_box .ico_right,.login_input,.login_btn,.login_t,.tip_box .close, .login_yzm .icon_wrong, .login_yzm .icon_right{ background:url(new_login_bg.png) no-repeat;}
 .login_box .ico_left,.login_box .ico_right{ display:block; width:9px; height:15px; }
 .login_box .ico_left{background-position:-16px 0; float:left;}
@@ -76,7 +76,7 @@ h2{background-position:-167px -250px; display:block; width:83px; height:50px;mar
 a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-block; line-height:34px; }
 .login_b { text-align:center; margin-top:30px; _margin-top:10px; }
 /*��¼ҳ������*/
-#main{ height:458px; left: 300px; position:relative; overflow:visible;}
+#main{ height:285px; left: 300px; position:relative; overflow:visible;}
 .login_pic01,.login_pic02,.login_pic03,.login_pic04,.login_pic05,.login_pic06, .login_pic07, .login_pic08, .login_pic09, .login_pic010, .login_pic011, .login_pic012{height:369px; display:inline-block; width:572px;}
 .login_pic01{ background:url(login_bg01.png) no-repeat;}
 .login_pic02{ background:url(login_bg02.png) no-repeat;}
