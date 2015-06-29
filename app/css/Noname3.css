@@ -122,7 +122,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
 .login_input:focus,.login_code:focus{ border-color:#62a6ea;}
 .login_btn{ background:url(../images/new_login_btn.png) no-repeat 0 0; width:100px; height:35px; line-height:9999px; overflow:hidden;}
 
-.login_box .bg .content{ margin-top: 60px;position:relative; *zoom:1;}
+.login_box .bg .content{ margin-top: 50px;position:relative; *zoom:1;}
 .login_box .bg .content .reg_lnk{ color:#999; position:absolute; top:22px; left:185px; font-size:12px; white-space:nowrap;}
 .login_box .phone_login{float: right; position: relative;}
 .login_box .phone_login a{color:#666;}
