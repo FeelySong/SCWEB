@@ -50,6 +50,7 @@ a:hover {
 }
 .l {
     float: left;
+    left:200px;
 }
 .r {
     float: right;
