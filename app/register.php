@@ -150,7 +150,7 @@ function LoginNow() {
 						</div>
                     </div>
                    <div class="content_reg_line">
-                    	<div class="form_title">用户呢称：</div>
+                    	<div class="form_title">用户昵称：</div>
                         <div class="form_word">
 						<span class="inputBox input180"><cite><input type="text" name="nickname" id="nickname" maxlength="32" value="" class="text"/></cite></span>
 						<span class='helpinfo' style="color:#FF0000">( 由2至8个字符组成 )</span>
