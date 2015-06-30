@@ -132,7 +132,6 @@ function LoginNow() {
                 </div>
         </div>
 		<div id="reg_content">
-			 <div id="content_reg_box_center">
         	<div style="width:684px; margin:auto;">
 					<form name='login' method="post" action="?" onSubmit="javascript:LoginNow(); return false;">
 					<input type="hidden" name="loginpass" id="loginpass">
@@ -189,10 +188,8 @@ function LoginNow() {
                     <button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
                     </div>
 					</form>
-
             </div>
         </div>
-</div>
 </div>
 </BODY>
 </HTML>
