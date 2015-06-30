@@ -61,7 +61,71 @@ $(document).ready(function(e) {
 </script>
 
 -- >
+        <div class="wrap" id="main">
+            <div class="login_erwm">
+                <div class="login-erwmdl">
+                      <p class="erwn"><img style="width:104px; height:104px;" src="images/comm/qrcode_index.jpg" /></p>
+                      <p class="ora">手机扫描，快速关注</p>
+                      <!--
+                      <p class="gray">请使用客户端扫描</p>
+                      -->
+                </div>
+                    </div>
+            <div class="login_box">
+                        <div class="lg_box">
+                            <div class="bg">
+                                <div class="content">
+                                    <div class="reg_lnk"></div>
+                                    <div class="phone_login">
+                                    </div>
+                                    <div class="other_login"></div>
 
+                                    <div class="tip_box">
+                                        <div  style="display: none;" id="dis" class="cnt">
+                                        </div>
+                                    </div>
+                                      <ul class="login_m">
+                                          <form action="./index.php" name="login" style="margin: 0px; padding: 0px" id="login"  method="POST">
+                                              <li>
+                                                  <span class="sp_l">用户名</span>
+                                                  <span class="sp_r">
+                                                      <input type="text" id="us" placeholder="邮箱/用户名" name="username" class="login_input" value="">
+                                                  </span>
+                                              </li>
+                                              <li>
+                                                  <span class="sp_l">密&nbsp;&nbsp;&nbsp;码</span>
+                                                  <span class="sp_r">
+                                                    <input type="password" id="ps" name="password" class="login_input" value="">
+                                                  </span>
+                                              </li>
+                                              <li class="login_yzm">
+                                                  <span class="sp_l">验证码</span>
+                                                  <span class="sp_r">
+                                                    <input type="text"  id="vs" name="vcodesource" maxlength="4" class="login_code">
+                                                    <span id="verifystatus" class=""></span>
+                                                    <span class="veid" >
+                                                        <img id="veid" name="veiddes" width="90" height="35" onclick="this.src='ValiCode_New2.php?'+new Date().getTime();return false;" src="ValiCode_New2.php"  style="cursor:pointer;" title="重新获取验证码">
+                                                    </span>
+                                                    <a class="fresh" href="javascript:;" onclick="displayyz();return false;" title="重新获取验证码"  class="fresh">重新获取验证码</a>
+                                                  </span>
+                                              </li>
+                                              <li>
+                                                  <span class="sp_l">&nbsp;</span>
+                                                  <input type="submit" onclick="return CheckLogin()" value="" style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" onmouseover="this.style.backgroundPosition='0px -45px';this.style.color='#FFFFFF';" class="login_btn">
+                                                      <!--<span id="fp"><a href="1hd/Member/FindType" style="cursor:pointer">忘记密码？</a></span>-->
+                                                    <span id="fp"><a href="register.php" style="cursor:pointer">点击注册</a></span>
+                                                    <input type="button" onclick="checkRegist()" id="btnRegist"   style="float:left;color: rgb(255, 255, 255); background-position: 0px 0px; " onmouseout="this.style.backgroundPosition='0px 0px';" class="regist_btn">
+                                              </li>
+                                              <li style="text-align: center;">&nbsp;</li>
+                                          </form>
+                                      </ul>
+                                      <div class="login-ptn">
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+        </div>
         <!--
         <div class="footer" style="border:0px;border-top: 2px solid #3C7EC8;">
             
