@@ -76,7 +76,7 @@ a.forget_a { height:12px; line-height:12px; vertical-align:top; display:inline-b
     .banner li { list-style: none; }
         .banner ul li { float: left; }
 
-#main{ height:285px; left: 100px; margin-top: 100px; float:left; position:relative; overflow:visible;}
+#main{ height:285px; left: 300px; margin-top: 100px; float:left; position:relative; overflow:visible;}
 
 
 .login_footer_ad{width: 572px; height:70px; background: url(login_footer_ad.png) no-repeat left center;}
