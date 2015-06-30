@@ -124,15 +124,13 @@ function LoginNow() {
 </script>
 
 <div id="allbox">
-    <div id="header">
-       <div id="header_content">
-          <div id="header_logo"></div>
-          <div id="header_right">
-			  <div id="header_tips"><?php echo $webname;?>欢迎您</div>
-			  <div id="header_menu" style='margin-left:400px;'></div>
-           </div>
-         </div>  	
-     </div>
+   <div id="header">
+            <div id="logo" class="l">
+                    <h1 class="l"><a target="_self" href=""></a></h1>
+                </div>
+            <div class="nav"><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=1975418259&amp;Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&amp;Menu=yes" target="_blank" style="background: url(images/ptkefu.png) no-repeat top;" class="w_right"></a>
+                </div>
+        </div>
      <div id="top_line"></div>
 		<div id="reg_content">
 			<div id="content_reg_box_top"></div>
