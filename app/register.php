@@ -52,7 +52,7 @@ if($flag=='confirm'){
 <SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT>
 <SCRIPT type="text/javascript" src="js/jquery.md5.js"></SCRIPT>
 <script language="javascript" type="text/javascript" src="js/common.js"></script>
-<LINK href="css/login.css" rel="stylesheet" type="text/css" />
+<LINK href="css/Noname.css" rel="stylesheet" type="text/css" />
 </HEAD>
 <BODY>
 <script type="text/javascript">
@@ -124,7 +124,7 @@ function LoginNow() {
 </script>
 
 <div id="allbox">
-   <div id="header">
+     <div id="header">
             <div id="logo" class="l">
                     <h1 class="l"><a target="_self" href=""></a></h1>
                 </div>
