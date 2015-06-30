@@ -96,7 +96,7 @@ div.gund {
 #header {
     border-bottom: 2px solid #ee2123;
     height: 99px;
-    left: 2000px;
+    left: 20px;
 }
 #logo a, h2 {
     background: rgba(0, 0, 0, 0) url("new_login_btn.png") no-repeat scroll 0 0;
