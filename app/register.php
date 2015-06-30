@@ -131,11 +131,8 @@ function LoginNow() {
             <div class="nav"><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=1975418259&amp;Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&amp;Menu=yes" target="_blank" style="background: url(images/ptkefu.png) no-repeat top;" class="w_right"></a>
                 </div>
         </div>
-     <div id="top_line"></div>
 		<div id="reg_content">
-			<div id="content_reg_box_top"></div>
-			 <div id="content_reg_box_center">					
-				<div id="maincontent">	
+			 <div id="content_reg_box_center">
         	<div style="width:684px; margin:auto;">
 					<form name='login' method="post" action="?" onSubmit="javascript:LoginNow(); return false;">
 					<input type="hidden" name="loginpass" id="loginpass">
@@ -194,9 +191,7 @@ function LoginNow() {
 					</form>
 
             </div>
-        </div>&nbsp;
-	</div> 
-	<div id="content_reg_box_bottom"></div>
+        </div>
 </div>
 </div>
 </BODY>
