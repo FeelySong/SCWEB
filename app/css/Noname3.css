@@ -24,9 +24,6 @@ body {
     color: #666666;
     font: 12px/1.5 Arial;
 }
-.body_bg {
-    background: #ffffff url("main_bg.png") repeat-x scroll 0 101px;
-}
 .clear {
     clear: both;
 }
