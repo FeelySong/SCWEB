@@ -49,6 +49,7 @@ a:hover {
 }
 .l {
     float: left;
+    margin-left: 50px;
 }
 .r {
     float: right;
