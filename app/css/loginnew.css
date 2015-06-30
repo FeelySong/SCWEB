@@ -1,0 +1,120 @@
+body, ul, form, dl, dt, dd, p {
+    margin: 0;
+    padding: 0;
+}
+body {
+    text-align: center;
+}
+h1, h2, h3, h4, h5 {
+    margin: 0;
+    padding: 0;
+}
+h1, h2 {
+    line-height: 0;
+    text-indent: -9999px;
+}
+ul {
+    list-style: outside none none;
+}
+img {
+    border: 0 none;
+}
+body {
+    color: #666666;
+    font: 12px/1.5 Arial;
+}
+.clear {
+    clear: both;
+}
+.clearfix {
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+a:link, a:visited {
+    color: #0f3f94;
+    text-decoration: none;
+}
+a:hover {
+    color: #f00;
+    text-decoration: underline;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}
+.wrap {
+    margin: 0 auto;
+    width: 550px;
+}
+.red {
+    color: #f00;
+}
+.orange {
+    color: #f60;
+}
+.blue {
+    color: #0f3f94;
+}
+.black, a.black, a.black:visited {
+    color: #666666;
+}
+a.black:hover {
+    color: #f00;
+}
+.gray, .gray a, a.gray {
+    color: #999999;
+}
+div.gund {
+    background-image: url("images/lba.png");
+    background-position: 5px 0;
+    background-repeat: no-repeat;
+    float: left;
+    height: 22px;
+    overflow: hidden;
+    text-indent: 18px;
+    width: 90%;
+}
+#fp {
+    float: left;
+    line-height: 30px;
+}
+#fp a {
+    color: #666;
+}
+#header {
+    border-bottom: 2px solid #ee2123;
+    height: 99px;
+    left: 2000px;
+}
+#logo a, h2 {
+    background: rgba(0, 0, 0, 0) url("new_login_btn.png") no-repeat scroll 0 0;
+}
+#logo a {
+    background: rgba(0, 0, 0, 0) url("/images/v1/logo.png") no-repeat scroll 0 0;
+    display: block;
+    height: 83px;
+    left: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-indent: -2000em;
+    width: 230px;
+}
+h2 {
+    background-position: -167px -250px;
+    display: block;
+    height: 50px;
+    margin: 10px 0 0 10px;
+    overflow: hidden;
+    width: 83px;
+}
