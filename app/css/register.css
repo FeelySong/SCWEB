@@ -142,7 +142,7 @@ input,button,textarea,select{font-size:inherit;*font-size:100%; font-family:inhe
 .inputGreen cite{background: url(../images/v1/login_v10.png) right -116px no-repeat;}
 .inputRed{background: url(../images/v1/login_v10.png) left -216px no-repeat;}
 .inputRed cite{background: url(../images/v1/login_v10.png) right -216px no-repeat;}
-.input60 cite{ width:60px;}
+.input60 cite{ width:180px;}
 .input100 cite{ width:100px;}
 .input140 cite{ width:140px;}
 .input180 cite{ width:180px;}
