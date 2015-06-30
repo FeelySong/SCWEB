@@ -215,7 +215,7 @@ h2 {
     vertical-align: middle;
 }
 .fresh {
-    background: rgba(0, 0, 0, 0) url("yzm_bg.png") no-repeat scroll 4px -144px;
+
     display: inline;
     float: left;
     height: 35px;
