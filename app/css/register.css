@@ -149,3 +149,6 @@ input,button,textarea,select{font-size:inherit;*font-size:100%; font-family:inhe
 
 
 .btn_next{cursor:pointer;border:0px;height:26px;width:79px;vertical-align: middle;background:url("../images/v1/regist.png") repeat-x 0px -351px}
+.inputSubmit{ width:104px; height:30px; background: url(../images/v1/login_v10.png) 0px -260px no-repeat; }
+.inputNext{ width:104px; height:30px; background: url(../images/v1/login_v10.png) -113px -260px no-repeat; }
+.btn_submit{cursor:pointer;border:0px;height:26px;width:69px;vertical-align: middle;background:url("../images/v1/left.png") repeat-x 0px -405px}
