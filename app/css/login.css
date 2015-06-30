@@ -21,9 +21,6 @@ a:active {color:#FA7908;text-decoration:underline;}
     height: 99px;
     left: 2000px;
 
-#logo a, h2 {
-    background: rgba(0, 0, 0, 0) url("new_login_btn.png") no-repeat scroll 0 0;
-}
 #logo a {
     background: rgba(0, 0, 0, 0) url("/images/v1/logo.png") no-repeat scroll 0 0;
     display: block;
