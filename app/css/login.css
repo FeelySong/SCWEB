@@ -16,13 +16,25 @@ a:active {color:#FA7908;text-decoration:underline;}
 .top{height:120px; text-align:center; padding-top:60px;}
 
 #allbox {height:100%; width:100%;}
-#header {background: url(../images/v1/login_v1.jpg) repeat-x 0px -32px;height:95px;width:100%;overflow:hidden;}
-#header_content {background: url(../images/v1/login_v10.png) no-repeat 0px 0px;width:932px;margin:auto;height:95px;}
-#header_logo {float: left; height: 95px; width: 245px; margin-left: 78px; _margin-left: 38px; background: url(../images/v1/logo.png) repeat-x 0px -130px; }
-#header_right {float: left; height: 95px; width: 520px; margin-left: 89px; }
-#header_tips {background: url(../images/v1/login_v1.jpg) no-repeat 0px 0px; float: right;height: 28px;width: 220px;margin-top: 18px;line-height:28px;text-align:center;}
-#header_menu {float: right;height: 33px;width: 220px;margin-top: 16px;}
-#top_line {background: url(../images/v1/login_v1.jpg) repeat-x 0px -226px;height:13px;width:100%;}
+#header {
+    border-bottom: 2px solid #ee2123;
+    height: 99px;
+    left: 2000px;
+
+#logo a, h2 {
+    background: rgba(0, 0, 0, 0) url("new_login_btn.png") no-repeat scroll 0 0;
+}
+#logo a {
+    background: rgba(0, 0, 0, 0) url("/images/v1/logo.png") no-repeat scroll 0 0;
+    display: block;
+    height: 83px;
+    left: 200px;
+    margin-top: 10px;
+    overflow: hidden;
+    text-indent: -2000em;
+    width: 230px;
+}
+
 /*
 #menu {height: 33px; width: 220px;}
 #menu li {width:100px;height:33px;line-height:33px;text-align:center;margin-left:5px;_margin-left:0px;display:inline;float:left;}
