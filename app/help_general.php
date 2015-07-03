@@ -600,7 +600,7 @@ $(document).ready(function(){
 </p>
 <div class="pageBreak">
 </div>
-<p>“时时彩”设11个奖级，每个奖级对应其各自的玩法：已看懂规则 <a href="/default_frame.php"><img alt="立即投注" src="http://img6.cache.netease.com/help/2014/1/23/2014012316561502fd5.png" /></a></p>
+<p>“时时彩”设11个奖级，每个奖级对应其各自的玩法：已看懂规则 <a href="."><img alt="立即投注" src="http://img6.cache.netease.com/help/2014/1/23/2014012316561502fd5.png" /></a></p>
 <p class="f_left">&nbsp;
 </p>
 <table bgcolor="#cccccc" border="0" width="100%" cellpadding="0" cellspacing="1">
