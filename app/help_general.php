@@ -650,7 +650,7 @@ $(document).ready(function(){
 <td bgcolor="#f8f8f8" height="25">直选奖</td>
 <td bgcolor="#f8f8f8" height="25">定位中后三码</td>
 <td bgcolor="#f8f8f8" height="25">678</td>
-<td bgcolor="#f8f8f8" height="25">1000元</td>
+<td bgcolor="#f8f8f8" height="25">1800元</td>
 <td bgcolor="#f8f8f8" height="25">1/1000</td>
 <td bgcolor="#f8f8f8" height="25">1:500</td>
 </tr>
@@ -675,7 +675,7 @@ $(document).ready(function(){
 <td bgcolor="#ffffff" height="25">直选奖</td>
 <td bgcolor="#ffffff" height="25">定位中后两码</td>
 <td bgcolor="#ffffff" height="25">78</td>
-<td bgcolor="#ffffff" height="25">100元</td>
+<td bgcolor="#ffffff" height="25">180元</td>
 <td bgcolor="#ffffff" height="25">1/100</td>
 <td bgcolor="#ffffff" height="25">1:50</td>
 </tr>
@@ -691,7 +691,7 @@ $(document).ready(function(){
 <td colspan="2" bgcolor="#f8f8f8" height="25">一星</td>
 <td bgcolor="#f8f8f8" height="25">中个位号码</td>
 <td bgcolor="#f8f8f8" height="25">8</td>
-<td bgcolor="#f8f8f8" height="25">10元</td>
+<td bgcolor="#f8f8f8" height="25">18元</td>
 <td bgcolor="#f8f8f8" height="25">1/10</td>
 <td bgcolor="#f8f8f8" height="25">1:5</td>
 </tr>
