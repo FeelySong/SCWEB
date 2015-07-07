@@ -1,0 +1,176 @@
+.mainbox{ background:#FFF; width:997px; margin:auto; margin-top:10px;}
+.position{ float:left; height:36px;background:#FFF; line-height:36px;width:966px;  font-size:12px; border-bottom:solid 2px #e1e1e1}
+.position a{font-size:12px; color:#333; text-decoration:none}
+.position span{ float:left; width:800px;}
+.position .left{ float:left;width:35px; height:36px; background:url(/templets/default/img/position.gif) no-repeat}
+.position .right{ float:right;width:37px; height:36px; background:url(/templets/default/img/positionr.gif) no-repeat}
+
+.text_list_f14{ font-size:12px;}
+.mar_10{float:left; width:630px;  margin:10px ; margin-top:0;overflow:hidden;}
+
+.mar_10copy{float:center; width:980px;  margin:10px ; margin-top:0;overflow:hidden;}
+
+.text_list{ margin:15px; padding:0; list-style:none}
+.text_list img,.buypeel img{border:1px solid #e1e1e1}
+.text_list li { float:left; line-height:30px; clear:both;width:980px;}
+.text_list li a{ color:#262626; font-size:12px; text-decoration:none}
+.text_list li a:hover{ color: #39F; font-size:12px; text-decoration: underline}
+.text_list li span{ font-size:10px; margin-left:10px;}
+#pages { margin:15px auto; text-align:center; clear:both; font-size:12px}
+#pages a { padding:3px 6px 2px; margin:3px; border:1px solid #B9DFF9; text-align:center; color:#077ac7; font-size:12px; text-decoration:none}
+#pages a.now{ background:#077ac7; color:#fff; border:0;}
+#pages a:hover,#pages a.now:hover { background:#077ac7; color:#fff;}
+
+.newlist{ float:right; width:240px; border-left:1px #e1e1e1 solid;margin:10px ; padding:10px; margin-top:0; padding-top:20px;}
+.newlist ul{ margin:0; padding:0; list-style:none}
+.newlist ul h2{ background:url(img/ico.gif) no-repeat; font-size:14px; text-indent:12px; color:#707070; }
+.newlist ul li{ line-height:25px;}
+.newlist ul li a{ font-size:12px; color:#666}
+.newlist ul li a:hover{ color:#999}
+
+#content {width:100%; margin:0 auto; overflow:hidden;}
+#content_head { text-align:center; padding:10px; border-bottom:1px solid #B9DFF9; }
+#content_head h1 { font-family:"ËÎÌו"; font-size:20px; color:#077ac7;}
+#content_head h2{line-height:24px; font-size:12px; font-weight:normal;}
+#digest { margin:10px; border:1px solid #eee; background-color: #fefeff; padding:8px; line-height:150%;text-indent:2em; font-size:14px;}
+#digest strong { color:#f00;}
+#endtext{ margin:0 auto;}
+#endtext,#endtext p,#endtext li,#content p{text-align:left; text-indent:2em; overflow:hidden; font-size:14px; clear:both; line-height: 180%; word-wrap:break-word; word-break:break-all;}
+#endtext,#endtext p,#endtext li{ width:620px;}
+#endtext .icon { border:0; margin:3px 0 0;}
+#endtext img { border:1px solid #ccc;max-width:700px;width:expression(this.width > 700 && this.width > this.height ? 700 : true);overflow:hidden;}
+#endtext p{ margin-top:10px;}
+#endtext a { text-decoration:underline;	color:#1f3a87;}
+#endtext a:hover { color:#bc2931;}
+
+
+
+a:link {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#ileft-plist{
+	background-image: url(../../../../../images/phpfour_15.jpg);
+	background-repeat: repeat-x;
+	display: inline;
+	padding: 0px;
+	clear: none;
+	float: left;
+	height: auto;
+	width: 244px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 1px;
+	border: 1px solid #dfdfdf;
+}
+#ileft-plist2{
+	background-image: url(../../../../../images/phpfour_15.jpg);
+	background-repeat: repeat-x;
+	display: inline;
+	padding: 0px;
+	clear: none;
+	float: left;
+	height: auto;
+	width: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 1px;
+	border: 1px solid #dfdfdf;
+}
+#ileft-plist-t{
+	background-image: url(../../../../images/phpfour_29.jpg);
+	background-position: center bottom;
+	clear: none;
+	float: none;
+	height: 26px;
+	width: 209px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	background-repeat: no-repeat;
+	font-size: 14px;
+	vertical-align: bottom;
+	padding-top: 12px;
+	padding-right: 0px;
+	padding-bottom: 0px;
+	padding-left: 0px;
+}
+#ileft-plist-t span{
+	font-size: 12px;
+}
+#ileft-plist-c{
+	clear: none;
+	float: none;
+	height: auto;
+	width: 209px;
+	margin-top: 6px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 3px;
+	padding-left: 0px;
+}
+#ileft-plist-c li{
+
+
+
+	border-bottom-width: 1.5px;
+	border-bottom-style: dashed;
+	border-bottom-color: #dddddd;
+
+}
+#ileft-serv{
+	background-image: url(../../../../images/phpfour_15.jpg);
+	background-repeat: repeat-x;
+	display: inline;
+	clear: none;
+	float: left;
+	height: auto;
+	width: 244px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 0px;
+	margin-left: 1px;
+	border: 1px solid #dfdfdf;
+	padding-top: 0px;
+	padding-right: 0px;
+	padding-bottom: 8px;
+	padding-left: 0px;
+}
+#ileft-serv-img{
+	padding: 0px;
+	clear: none;
+	float: none;
+	height: 108px;
+	width: 207px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+#ileft-serv-span{
+	padding: 0px;
+	clear: none;
+	float: none;
+	height: auto;
+	width: 207px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+}
+
+
