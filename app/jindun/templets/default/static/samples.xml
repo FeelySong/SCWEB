@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<vcastr>
+	<channel>
+		<item>
+			<source>Xjdssc.flv</source>
+			<duration></duration>
+			<title>新金盾时时彩平台</title>
+			<link>http://game.xjdssc.com/</link>
+		</item>
+	</channel>
+	<config>
+		<bufferTime>4</bufferTime>
+		<contralPanelAlpha>0</contralPanelAlpha>
+		<controlPanelBgColor>0x000000</controlPanelBgColor>
+		<controlPanelBtnColor>0xffffff</controlPanelBtnColor>
+		<contralPanelBtnGlowColro>0xffff00</contralPanelBtnGlowColro>
+		<controlPanelMode>float</controlPanelMode>
+		<defautVolume>0.7</defautVolume>
+		<isAutoPlay>true</isAutoPlay>
+		<isLoadBegin>true</isLoadBegin>
+		<isShowAbout>true</isShowAbout>
+		<scaleMode>showAll</scaleMode>
+		<isRepeat>true</isRepeat>
+	</config>
+	<plugIns>
+	</plugIns>
+</vcastr>
