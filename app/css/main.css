@@ -68,7 +68,7 @@ a{text-decoration: none;}
 
 .clear{clear:both;float:none;font-size:0px;margin:0;padding:0;display:block;}
 
-#header-div {height:100px; background-color: #006633;}
+#header-div {height:100px; background-color:#6633;}
 #logo-div {position:relative;float:left;cursor:pointer; margin-top:20px; margin-left:40px;}
 #loading-div {clear: right;text-align: right;display: block;}
 #submenu-div2 {height:100px;}
