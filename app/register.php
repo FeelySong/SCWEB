@@ -183,7 +183,7 @@ function LoginNow() {
 						<img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
                     </div>
 					<div style="height:30px; text-align:center;">
-					<button class="button button-highlight button-box button-large" style="float: left;"><i class="fa fa-plus"></i>注 册</button>
+					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>注 册</button>
                     </div>
 					</form>
             </div>
