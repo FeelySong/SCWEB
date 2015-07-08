@@ -72,8 +72,8 @@ a{text-decoration: none;}
 #logo-div {position:relative;float:left;cursor:pointer; margin-top:2px; margin-left:37px;}
 #loading-div {clear: right;text-align: right;display: block;}
 #submenu-div2 {height:100px;}
-#submenu-div {height:50px;}
-#submenu-div ul {height:50px;line-height:50px;width:247px;background: url("../images/v1/main_header_bg.jpg") no-repeat 0px -65px;float:right;margin-right:50px;*margin-right:20px;}
+#submenu-div {height:100px;}
+#submenu-div ul {height:100px;line-height:50px;width:247px;background: url("../images/v1/main_header_bg.jpg") no-repeat 0px -65px;float:right;margin-right:50px;*margin-right:20px;}
 #submenu-div li {float:left;padding-left:7px;_margin-top:2px;}
 #submenu-div li a{color:#828282;border-left:1px solid #D8CCD8;*border:0px;}
 #submenu-div li a:visited, #submenu-div li a:link {color:#828282;}
