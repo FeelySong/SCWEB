@@ -53,6 +53,7 @@ if($flag=='confirm'){
 <SCRIPT type="text/javascript" src="js/jquery.md5.js"></SCRIPT>
 <script language="javascript" type="text/javascript" src="js/common.js"></script>
 <LINK href="css/register.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/buttons.css">
 </HEAD>
 <BODY>
 <script type="text/javascript">
@@ -182,6 +183,7 @@ function LoginNow() {
 						<img id="vcsImg" src="ValiCode_New.php"  name="validate" align="absbottom" style="margin-left:6px;cursor:pointer; border: 1px solid #999" onClick="refreshimg()" alt="点击图片更新验证码">
                     </div>
 					<div style="height:30px; text-align:center;">
+					<button class="button button-highlight button-box button-large" style="float: left;"><i class="fa fa-plus"></i>登录</button>
                     <button name="submit" type="submit" width='69' height='26' class="btn_next" /></button>
                     </div>
 					</form>
