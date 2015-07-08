@@ -28,6 +28,7 @@ if($flag=="getmoney"){
 <script language="javascript" type="text/javascript" src="js/common.js"></script>
 <SCRIPT LANGUAGE='JavaScript'>function ResumeError() {return true;} window.onerror = ResumeError; </SCRIPT>
 <link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/buttons.css" rel="stylesheet" type="text/css" />
 </HEAD>
 <BODY>
 <div class="mem_header">
