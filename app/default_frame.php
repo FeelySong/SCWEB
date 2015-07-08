@@ -161,18 +161,18 @@ html {overflow: hidden;}
 		<div id="header-div" >
 		 <div id="submenu-div2">
                     <div id="logo-div" onclick="javascript:window.top.location='./default_frame.php';"><img src="images/v1/logo.png" width="200" height="80"  title="返回首页"/></div>
-                    <div id="nav_t">
-	   <ul>
-	      <li id="nav_1"><a href="default_frame.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_2" TITLE='填写充值申请' ALT='填写充值申请'><a target="mainframe" href="account_autosave.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_3" TITLE='投注记录查看' ALT='投注记录查看'><a  target="mainframe" href="history_playlist.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_4" TITLE='所有用户信息' ALT='所有用户信息'><a target="mainframe" href="users_list.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_5" TITLE='查询游戏统计信息' ALT='查询游戏统计信息'><a target="mainframe" href="report_game.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_6" TITLE='查看各彩种奖金' ALT='查看各彩种奖金'><a target="mainframe" href="users_info.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_7" TITLE='常见问题说明' ALT='常见问题说明'><a target="mainframe" href="help_general.php"><span>&nbsp;</span></a></li>
-		  <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="csonline_addnew.php" target="_blank"><span>&nbsp;</span></a></li>
-                  <!--<li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="http://wpa.qq.com/msgrd?V=3&uin=1975418259&Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&Menu=yes&from=discuz" target="_blank"><span>&nbsp;</span></a></li>-->
-	   </ul></div>
+//                    <div id="nav_t">
+//                       <ul>
+//                          <li id="nav_1"><a href="default_frame.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_2" TITLE='填写充值申请' ALT='填写充值申请'><a target="mainframe" href="account_autosave.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_3" TITLE='投注记录查看' ALT='投注记录查看'><a  target="mainframe" href="history_playlist.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_4" TITLE='所有用户信息' ALT='所有用户信息'><a target="mainframe" href="users_list.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_5" TITLE='查询游戏统计信息' ALT='查询游戏统计信息'><a target="mainframe" href="report_game.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_6" TITLE='查看各彩种奖金' ALT='查看各彩种奖金'><a target="mainframe" href="users_info.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_7" TITLE='常见问题说明' ALT='常见问题说明'><a target="mainframe" href="help_general.php"><span>&nbsp;</span></a></li>
+//                          <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="csonline_addnew.php" target="_blank"><span>&nbsp;</span></a></li>
+//                                  <!--<li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="http://wpa.qq.com/msgrd?V=3&uin=1975418259&Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&Menu=yes&from=discuz" target="_blank"><span>&nbsp;</span></a></li>-->
+//                       </ul></div>
   </div>
 </div></td></tr></table>
 
