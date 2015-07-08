@@ -39,6 +39,7 @@ if($flag=="gettoprize"){
 .gonggaodiv div{height:32px;overflow:hidden;}
 </STYLE>
 <LINK href="css/main.css" rel="stylesheet" type="text/css" />
+<link type="text/css" rel="stylesheet" href="css/buttons.css">
 <SCRIPT type="text/javascript" src="js/jquery.js"></SCRIPT>
 <script language="javascript" type="text/javascript" src="js/common.js"></script>
 <SCRIPT language="javascript" type="text/javascript">
