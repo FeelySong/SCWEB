@@ -41,7 +41,7 @@ if($flag=="getmoney"){
 </div></dt>
 	<dd>
 		<ul class='t_infobox'>
-            <li><span style="font-weight:bold; margin-left: 50px;"><?=$rowa['nickname']?></span></li>
+            <li><span style="font-weight:bold; margin-top: 50px; margin-left: 50px;"><?=$rowa['nickname']?></span></li>
 			<li id='refreshimg' style="" TITLE='点击刷新余额'><span style="margin-left: 20px;">余额:</span><span id="leftusermoney" style="color:#fdd205; font-weight:bold;"><?=number_format($lmoney,2)?></span></li>
             <?php if($total>0){?>
 			<li TITLE='消息列表' style="" onClick="javascript:window.top.frames['mainframe'].document.location.href='./users_message.php'" >未读消息: <?=$total?> 条</li>
