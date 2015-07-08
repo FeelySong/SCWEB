@@ -162,11 +162,6 @@ html {overflow: hidden;}
 		<div id="header-div" >
 		 <div id="submenu-div2">
                     <div id="logo-div" onclick="javascript:window.top.location='./default_frame.php';"><img src="images/v1/logo.png" width="200" height="80"  title="返回首页"/></div>
-                    <div>
-                    <button class="button button-action button-box button-giant button-longshadow-left">
-                        <i class="fa fa-share-alt">首页</i>
-                    </button>
-                    </div>
                     <div id="nav_t">
                        <ul>
                           <li id="nav_1"><a href="default_frame.php"><span>&nbsp;</span></a></li>
