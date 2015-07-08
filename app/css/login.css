@@ -153,6 +153,11 @@ h2 {
     background-position: 0 0;
     float: right;
 }
+.login_box .lg_box {
+    float: left;
+    margin: 0 auto;
+    width: 329px;
+}
 .login_t {
     background-position: -233px -150px;
     display: inline-block;
