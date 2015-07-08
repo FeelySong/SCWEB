@@ -52,7 +52,7 @@ if($flag=="getmoney"){
         <ul class='t_infobox'>
             <li style="text-align:left; font-size:12px; cursor:default;">
             <a href="http://www.bootcss.com/" class="button button-glow button-border button-rounded button-primary">充值</a>
-            <a href="http://www.bootcss.com/" class="button button-glow button-border button-rounded button-primary">提现</a>
+            <a href="http://www.bootcss.com/" class="button button-glow button-border button-rounded button-primary" style="float: left;margin-left: 10px;">提现</a>
             <?php if($_SESSION["level"]==2){?><a href="account_fenhong.php" style="border:0; margin:0; padding:0;" target="mainframe"><img src='images/comm/t.gif' name="tximg" border="0" class='ttt0' id="tximg" TITLE='分红'></a><?php }?>
 			<!--a href="promotion_center.php" style="border:0; margin:0; padding:0;" target="mainframe"><img TITLE='活动' id="hbimg" class='e0' src='images/comm/t.gif' border="0"></a-->            </li>
 		</ul>
