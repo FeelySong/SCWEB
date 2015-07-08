@@ -410,7 +410,7 @@
   .button-circle.button-small,
   .button-box.button-small,
   .button-square.button-small {
-    width: 30px; }
+    width: 100px; }
   .button-circle.button-tiny,
   .button-box.button-tiny,
   .button-square.button-tiny {
@@ -1480,9 +1480,9 @@
   padding: 0 40px; }
 
 .button-small {
-  font-size: 12px;
-  height: 30px;
-  line-height: 30px;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
   padding: 0 30px; }
 
 .button-tiny {
