@@ -1,4 +1,4 @@
-﻿@charset utf-8;
+﻿@charset "UTF-8";
 
 body, h1, h2, h3, h4, h5, h6, HR, P, BLockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, lengend, button, input, textarea {
     background: transparent none repeat scroll 0 0;
@@ -108,12 +108,10 @@ body {
 }
 #logo {
     background: rgba(0, 0, 0, 0) url("logo.png") no-repeat scroll 0 0;
-    height: 80px;
-    margin-left: 50px;
-    margin-top: 20px;
+    height: 121px;
     position: absolute;
     top: 0;
-    width: 272px;
+    width: 358px;
 }
 #logo h1 {
     display: none;
