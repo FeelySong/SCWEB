@@ -423,7 +423,6 @@ body {
     width: 100%;
 }
 #footer {
-    background: rgba(0, 0, 0, 0) url("ftlogo.png") no-repeat scroll 18px 20px;
     color: #919191;
     line-height: 18px;
     margin: 0 auto;
