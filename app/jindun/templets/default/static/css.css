@@ -109,7 +109,7 @@ body {
 #logo {
     background: rgba(0, 0, 0, 0) url("logo.png") no-repeat scroll 0 0;
     float: left;
-    height: 90px;
+    height: 80px;
     margin-left: 50px;
     margin-top: 20px;
     position: relative;
