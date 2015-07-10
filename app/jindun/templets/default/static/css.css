@@ -110,7 +110,7 @@ body {
     background: rgba(0, 0, 0, 0) url("logo.png") no-repeat scroll 0 0;
     height: 80px;
     position: absolute;
-    margin-top: 10px;
+    margin-top: 20px;
     width: 272px;
 }
 #logo h1 {
