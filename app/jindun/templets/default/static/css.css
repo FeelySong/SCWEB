@@ -108,10 +108,10 @@ body {
 }
 #logo {
     background: rgba(0, 0, 0, 0) url("logo.png") no-repeat scroll 0 0;
-    height: 121px;
+    height: 80px;
     position: absolute;
-    top: 0;
-    width: 358px;
+    margin-top: 10px;
+    width: 272px;
 }
 #logo h1 {
     display: none;
