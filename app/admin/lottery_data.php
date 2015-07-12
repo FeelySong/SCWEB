@@ -26,7 +26,7 @@ if($cid==9 || $cid==10){
 //		$tnums=sprintf("%03d",date("z",strtotime($tday))+1-7);
 //	}
 }else{
-	if($cid==2 || $cid==5 || $cid==6 || $cid==7 || $cid==8 || $cid==11){
+	if($cid==2 || $cid==5 || $cid==7 || $cid==11){
 		$tday2=date("ymd");
 	}else{
 		$tday2=date("Ymd");
