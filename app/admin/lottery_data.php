@@ -27,7 +27,7 @@ if($cid==9 || $cid==10){
 //	}
 }else{
 	if($cid==1 || $cid==2 || $cid==5 || $cid==6 || $cid==7 || $cid==8 || $cid==11){
-		$tday2=date("ymd");
+		$tday2=date("Ymd");
 	}else{
 		$tday2=date("Ymd");
 	}
