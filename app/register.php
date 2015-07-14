@@ -39,7 +39,7 @@ if($flag=='confirm'){
             echo "<script language=javascript>alert('注册成功');window.location='index.html';</script>";
             exit;		
     }else{
-             echo("<script>alert('验证码不正确，请重新输入');location='register.php'</script>");
+             echo("<script>alert('验证码不正确，请重新输入');location='.'</script>");
     }
 }
 ?>
@@ -184,6 +184,7 @@ function LoginNow() {
                     </div>
 					<div style="height:30px; text-align:center;">
 					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>注 册</button>
+					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>登 录</button>
                     </div>
 					</form>
             </div>
