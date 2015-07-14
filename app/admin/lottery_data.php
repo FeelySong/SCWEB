@@ -102,7 +102,7 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
       		<td class="nav_list_td"><div class="tabs">	
 			<ul><li <?php if($cid==1){echo "class='select'";}?>><a href="?id=1">重庆</a></li>
 			<li <?php if($cid==2){echo "class='select'";}?>><a href="?id=2">SC五分彩</a></li>
-			<li <?php if($cid==12){echo "class='select'";}?>><a href="?id=2">SC一分彩</a></li>
+			<li <?php if($cid==12){echo "class='select'";}?>><a href="?id=12">SC一分彩</a></li>
 			<li <?php if($cid==3){echo "class='select'";}?>><a href="?id=3">新疆</a></li>
 			<li <?php if($cid==4){echo "class='select'";}?>><a href="?id=4">江西</a></li>
 			<li <?php if($cid==5){echo "class='select'";}?>><a href="?id=5">时时乐</a></li>
