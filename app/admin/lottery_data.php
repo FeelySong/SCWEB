@@ -100,7 +100,21 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
   	<table width="95%" border="0" cellspacing="0" cellpadding="0" class="nav_list">
     	<tr>
       		<td class="nav_list_td"><div class="tabs">	
-			<ul><li <?php if($cid==1){echo "class='select'";}?>><a href="?id=1">重庆</a></li><li <?php if($cid==2){echo "class='select'";}?>><a href="?id=2">SC五分彩</a></li><li <?php if($cid==3){echo "class='select'";}?>><a href="?id=3">新疆</a></li><li <?php if($cid==4){echo "class='select'";}?>><a href="?id=4">江西</a></li><li <?php if($cid==5){echo "class='select'";}?>><a href="?id=5">时时乐</a></li><li <?php if($cid==6){echo "class='select'";}?>><a href="?id=6">十一运</a></li><li <?php if($cid==7){echo "class='select'";}?>><a href="?id=7">多乐彩</a></li><li <?php if($cid==8){echo "class='select'";}?>><a href="?id=8">广东11选5</a></li><li <?php if($cid==9){echo "class='select'";}?>><a href="?id=9">3D</a></li><li <?php if($cid==10){echo "class='select'";}?>><a href="?id=10">排列3-5</a></li><li <?php if($cid==11){echo "class='select'";}?>><a href="?id=11">重庆11选5</a></li></ul></div></td>
+			<ul><li <?php if($cid==1){echo "class='select'";}?>><a href="?id=1">重庆</a></li>
+			<li <?php if($cid==2){echo "class='select'";}?>><a href="?id=2">SC五分彩</a></li>
+			<li <?php if($cid==12){echo "class='select'";}?>><a href="?id=2">SC一分彩</a></li>
+			<li <?php if($cid==3){echo "class='select'";}?>><a href="?id=3">新疆</a></li>
+			<li <?php if($cid==4){echo "class='select'";}?>><a href="?id=4">江西</a></li>
+			<li <?php if($cid==5){echo "class='select'";}?>><a href="?id=5">时时乐</a></li>
+			<li <?php if($cid==6){echo "class='select'";}?>><a href="?id=6">十一运</a></li>
+			<li <?php if($cid==7){echo "class='select'";}?>><a href="?id=7">多乐彩</a></li>
+			<li <?php if($cid==8){echo "class='select'";}?>><a href="?id=8">广东11选5</a></li>
+			<li <?php if($cid==9){echo "class='select'";}?>><a href="?id=9">3D</a></li>
+			<li <?php if($cid==10){echo "class='select'";}?>><a href="?id=10">排列3-5</a></li>
+			<li <?php if($cid==11){echo "class='select'";}?>><a href="?id=11">重庆11选5</a></li>
+			</ul>
+			</div>
+			</td>
     	</tr>
   	</table>
   <br />
