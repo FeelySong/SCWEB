@@ -307,9 +307,9 @@ function filterPercent(num){
 				<span class="content">重庆</span>
 				<span class="tabbar-right"></span>
 			 </span>
-						 <span id="tabbar_tab_2" class="tab-back" TITLE='黑龙江时时彩 (HLJSSC)' ALT='黑龙江时时彩 (HLJSSC)'>
+						 <span id="tabbar_tab_2" class="tab-back" TITLE='SC五分彩时时彩 (HLJSSC)' ALT='SC五分彩时时彩 (HLJSSC)'>
 				<span class="tabbar-left"></span>
-				<span class="content">黑龙江</span>
+				<span class="content">SC五分彩</span>
 				<span class="tabbar-right"></span>
 			 </span>
 						 <span id="tabbar_tab_3" class="tab-back" TITLE='新疆时时彩 (XJSSC)' ALT='新疆时时彩 (XJSSC)'>

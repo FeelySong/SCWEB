@@ -37,7 +37,7 @@ require_once 'conn.php';
 	<dd class="item_main">
         	<ul>
 					<li TITLE='重庆时时彩 (CQSSC)' ALT='重庆时时彩 (CQSSC)'><a target="mainframe" href="play_cqssc.php">投注记录</a></li>
-					<li TITLE='黑龙江时时彩 (HLJSSC)' ALT='黑龙江时时彩 (HLJSSC)'><a target="mainframe" href="play_hljssc.php">追号记录</a></li>
+					<li TITLE='SC五分彩时时彩 (HLJSSC)' ALT='SC五分彩时时彩 (HLJSSC)'><a target="mainframe" href="play_hljssc.php">追号记录</a></li>
 					<li TITLE='新疆时时彩 (XJSSC)' ALT='新疆时时彩 (XJSSC)'><a target="mainframe" href="play_xjssc.php">中奖记录</a></li>
 					<li TITLE='江西时时彩 (JXSSC)' ALT='江西时时彩 (JXSSC)'><a target="mainframe" href="play_jxssc.php">返点记录</a></li>
 					<li TITLE='上海时时乐 (SHSSL)' ALT='上海时时乐 (SHSSL)'><a target="mainframe" href="play_shssl.php">帐变记录</a></li>

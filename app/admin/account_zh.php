@@ -388,7 +388,7 @@ function stopOnClick() {
           <select name="lotteryid" id="lotteryid" style="width:100px;">
             <option value="0" <?php if($lotteryid==0 || $lotteryid==""){echo "SELECTED";}?>>所有游戏</option>
             <option value="1" <?php if($lotteryid==1){echo "SELECTED";}?>>重庆时时彩</option>
-            <option value="2" <?php if($lotteryid==2){echo "SELECTED";}?>>黑龙江时时彩</option>
+            <option value="2" <?php if($lotteryid==2){echo "SELECTED";}?>>SC五分彩时时彩</option>
             <option value="3" <?php if($lotteryid==3){echo "SELECTED";}?>>新疆时时彩</option>
             <option value="4" <?php if($lotteryid==4){echo "SELECTED";}?>>江西时时彩</option>
             <option value="5" <?php if($lotteryid==5){echo "SELECTED";}?>>上海时时乐</option>

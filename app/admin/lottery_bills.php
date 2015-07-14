@@ -23,7 +23,7 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
 <div align="center"><br />
   <table width="500" border="0" cellspacing="0" cellpadding="0">
     <tr>
-      <td>重庆时时彩 黑龙江时时彩 </td>
+      <td>重庆时时彩 SC五分彩时时彩 </td>
     </tr>
   </table>
   <br />
