@@ -184,7 +184,7 @@ function LoginNow() {
                     </div>
 					<div style="height:30px; text-align:center;">
 					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>注 册</button>
-					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>登 录</button>
+					<a href="register.php" class="button button-caution button-rounded button-jumbo" style="width: 100px;">注册</a>
                     </div>
 					</form>
             </div>
