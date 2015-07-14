@@ -184,7 +184,7 @@ function LoginNow() {
                     </div>
 					<div style="height:40px; text-align:center;margin-top: 20px;">
 					<button class="button button-highlight button-box button-large" style="float: left;margin-left: 50px;"><i class="fa fa-plus"></i>注   册</button>
-					<a href="." class="button button-caution button-rounded button-jumbo" style="margin-right: 300px;width: 100px;">已有账号</a>
+					<a href="." class="button button-caution button-rounded button-jumbo" style="margin-right: 300px;width: 200px;">已有账号</a>
                     </div>
 					</form>
             </div>
