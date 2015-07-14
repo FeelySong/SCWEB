@@ -563,7 +563,7 @@ jQuery(document).ready(function() {
 			游戏名称：<select name="lotteryid" id="lotteryid" style="width:100px;">
   						<option value="0">所有游戏</option>
     					<option value="1">重庆时时彩</option>
-												<option value="2">全天乐乐彩
+												<option value="2">SC五分彩
 </option>
 												<option value="3">新疆时时彩</option>
 												<option value="4">江西时时彩</option>

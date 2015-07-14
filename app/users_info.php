@@ -239,7 +239,7 @@ $(document).ready(function(){
 		  <span class="content">重庆</span>
 		  <span class="tabbar-right"></span>
 		</span>
-    	    <span class="tab-back"  id="general_tab_2" TITLE='全天乐乐彩 (HLJSSC)' ALT='全天乐乐彩 (HLJSSC)'>
+    	    <span class="tab-back"  id="general_tab_2" TITLE='SC五分彩 (HLJSSC)' ALT='SC五分彩 (HLJSSC)'>
 		  <span class="tabbar-left"></span>
 		  <span class="content">全天</span>
 		  <span class="tabbar-right"></span>

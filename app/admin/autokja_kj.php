@@ -54,7 +54,7 @@ if($qihao){
 	$rss_jc=mysql_query($sqls_jc) or  die("数据库修改出错1".mysql_error());
 	$rows_jc = mysql_fetch_array($rss_jc);
 	if($rows_jc['id']){
-		echo("全天乐乐彩第".$rows_jc['issue']."期:".$rows_jc['code']."");
+		echo("SC五分彩第".$rows_jc['issue']."期:".$rows_jc['code']."");
 	}else{
 		
 	echo($qihao."<br>");

@@ -282,7 +282,7 @@ function filterPercent(num){
 				<span class="content">重庆</span>
 				<span class="tabbar-right"></span>
 			 </span>
-						 <span id="tabbar_tab_2" class="tab-back" TITLE='全天乐乐彩 (QTLLC)' ALT='全天乐乐彩 (QTLLC)'>
+						 <span id="tabbar_tab_2" class="tab-back" TITLE='SC五分彩 (QTLLC)' ALT='SC五分彩 (QTLLC)'>
 				<span class="tabbar-left"></span>
 				<span class="content">全天</span>
 				<span class="tabbar-right"></span>
