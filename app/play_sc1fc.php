@@ -9,7 +9,7 @@ $flag=$_REQUEST['flag'];
 $lotteryid="2";
 $lottery="SC分分彩";
 
-$sqls="select * from ssc_nums where cid='2' and endtime>='".date("H:i:s")."' order by id asc limit 1";
+$sqls="select * from ssc_nums where cid='12' and endtime>='".date("H:i:s")."' order by id asc limit 1";
 $rss=mysql_query($sqls) or  die("数据库修改出错1".mysql_error());
 $nums=mysql_num_rows($rss);
 $dymd=date("ymd");
@@ -40,7 +40,7 @@ if($flag=="gettime"){
 }else if($flag=="gethistory"){
 //	$lotteryid=$_REQUEST['lotteryid'];
 //	echo $_REQUEST['issue'];	//120225076
-	$sqla="select * from ssc_data where cid='2' and issue='".$_REQUEST['issue']."'";
+	$sqla="select * from ssc_data where cid='12' and issue='".$_REQUEST['issue']."'";
 	$rsa=mysql_query($sqla) or  die("数据库修改出错3".mysql_error());
 	$rowa = mysql_fetch_array($rsa);
 	if(empty($rowa)){
@@ -58,11 +58,11 @@ if($flag=="gettime"){
 	require_once 'playact.php';
 }else{
 
-	$sqlc="select * from ssc_data where cid='2' order by issue desc limit 1";
+	$sqlc="select * from ssc_data where cid='12' order by issue desc limit 1";
 	$rsc=mysql_query($sqlc) or  die("数据库修改出错!!".mysql_error());
 	$rowc = mysql_fetch_array($rsc);
 	
-	$sqld = "select * from ssc_class WHERE cid='2' order by id asc";
+	$sqld = "select * from ssc_class WHERE cid='12' order by id asc";
 	$rsd = mysql_query($sqld);
 	while ($rowd = mysql_fetch_array($rsd)){
 		$strd=explode(";",$rowd['rates']);
@@ -599,9 +599,9 @@ methodhelp:'对十位和个位的“大（56789）小（01234）、单（13579�
                          today:[
 <?php
 if($nums==0){
-	$sqlb="select * from ssc_nums where cid='2' order by id asc";
+	$sqlb="select * from ssc_nums where cid='12' order by id asc";
 }else{
-	$sqlb="select * from ssc_nums where cid='2' and endtime>='".date("H:i:s")."' order by id asc";
+	$sqlb="select * from ssc_nums where cid='12' and endtime>='".date("H:i:s")."' order by id asc";
 }
 	$rsb=mysql_query($sqlb) or  die("数据库修改出错!".mysql_error());
 	while ($rowb = mysql_fetch_array($rsb)){
