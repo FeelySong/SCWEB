@@ -102,7 +102,6 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
       		<td class="nav_list_td"><div class="tabs">	
 			<ul><li <?php if($cid==1){echo "class='select'";}?>><a href="?id=1">重庆</a></li>
 			<li <?php if($cid==2){echo "class='select'";}?>><a href="?id=2">SC五分彩</a></li>
-			<li <?php if($cid==12){echo "class='select'";}?>><a href="?id=12">SC一分彩</a></li>
 			<li <?php if($cid==3){echo "class='select'";}?>><a href="?id=3">新疆</a></li>
 			<li <?php if($cid==4){echo "class='select'";}?>><a href="?id=4">江西</a></li>
 			<li <?php if($cid==5){echo "class='select'";}?>><a href="?id=5">时时乐</a></li>
@@ -112,6 +111,7 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
 			<li <?php if($cid==9){echo "class='select'";}?>><a href="?id=9">3D</a></li>
 			<li <?php if($cid==10){echo "class='select'";}?>><a href="?id=10">排列3-5</a></li>
 			<li <?php if($cid==11){echo "class='select'";}?>><a href="?id=11">重庆11选5</a></li>
+			<li <?php if($cid==12){echo "class='select'";}?>><a href="?id=12">SC一分彩</a></li>
 			</ul>
 			</div>
 			</td>
@@ -122,7 +122,7 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
 		  	<tr>
 				<td width="70" class="t_list_caption">场次</td>
 			  <td width="120" class="t_list_caption">名称</td>
-				<td width="120" class="t_list_caption">期数</td>
+				<td width="150" class="t_list_caption">期数</td>
 				<td class="t_list_caption">开奖号码</td>
 			  <td width="150" class="t_list_caption">开奖时间</td>
 				<td width="80" class="t_list_caption">状态</td>
