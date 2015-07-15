@@ -718,7 +718,7 @@
 		var secondTime=Math.ceil(Math.random()*(89-30)+30);
 		var timerno=window.setInterval(function(){	//left second
 			if($.lt_time_leave>0&&($.lt_time_leave%firstTime==0||$.lt_time_leave==secondTime)){
-				$.ajax({type:"POST",URL:$.lt_ajaxurl,timeout:30000,data:"lotteryid="+$.lt_lottid+"&issue="+$($.lt_id_data.id_cur_issue).html()+"&flag=gettime",success:function(data){
+				$.ajax({type:"POST",URL:$.lt_ajaxurl,timeout:6000,data:"lotteryid="+$.lt_lottid+"&issue="+$($.lt_id_data.id_cur_issue).html()+"&flag=gettime",success:function(data){
 //					alert("lotteryid="+$.lt_lottid+"&issue="+$($.lt_id_data.id_cur_issue).html()+"&flag=gettime");
 //					alert($.lt_ajaxurl);
 //					alert(data);
@@ -987,7 +987,7 @@
 		function ajaxSubmit(){
 			$.blockUI({message:lot_lang.am_s22,overlayCSS:{backgroundColor:"#000000",opacity:0.3,cursor:"wait"}});
 			var form=$(me).closest("form");//alert($(form).serialize());
-			$.ajax({type:"POST",url:$.lt_ajaxurl,timeout:30000,data:$(form).serialize(),success:function(data){
+			$.ajax({type:"POST",url:$.lt_ajaxurl,timeout:6000,data:$(form).serialize(),success:function(data){
 				$.unblockUI({fadeInTime:0,fadeOutTime:0});
 				$.lt_submiting=false;
 				if(data.length<=0){
