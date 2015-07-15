@@ -134,7 +134,7 @@ $rsnewslist = mysql_query($sql) or  die("数据库修改出错!!!!".mysql_error(
 				if($cid==9 || $cid==10){
 					$tnums=sprintf("%03d",date("z"));
 				}else{
-					if($cid==1 || $cid==2 ||  $cid==4 $cid==12){
+					if($cid==1 || $cid==2 || $cid==4 || $cid==12){
 //						if($cid==4){
 //							$tnums="-".$row['nums'];
 //						}else{
