@@ -98,7 +98,7 @@ body {
     background: rgba(0, 0, 0, 0) url("topbg.gif") repeat-x scroll 0 0;
 }
 #header-wrap {
-    height: 121px;
+    height: 100px;
     width: 100%;
 }
 #header {
@@ -109,7 +109,7 @@ body {
 #logo {
     background: rgba(0, 0, 0, 0) url("logo.png") no-repeat scroll 0 0;
     float: left;
-    height: 80px;
+    height: 75px;
     margin-left: 50px;
     margin-top: 20px;
     position: relative;
