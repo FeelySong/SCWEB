@@ -161,7 +161,7 @@ html {overflow: hidden;}
 	<td id="topbox">
 		<div id="header-div" >
 		 <div id="submenu-div2">
-                    <div id="logo-div" onclick="javascript:window.top.location='./default_frame.php';"><img src="images/v1/logo.png" width="200" height="80"  title="返回首页"/></div>
+                    <div id="logo-div" onclick="javascript:window.top.location='./default_frame.php';"><img src="images/v1/logo.png" width="272" height="75"  title="返回首页"/></div>
                     <div id="nav_t">
                        <ul>
                           <li id="nav_1"><a href="default_frame.php"><span>&nbsp;</span></a></li>
