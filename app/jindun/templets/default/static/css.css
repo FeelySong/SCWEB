@@ -163,11 +163,11 @@ body {
 }
 #homebanner-wrap {
     background: #004778 none repeat scroll 0 0;
-    height: 301px;
+    height: 400px;
     width: 100%;
 }
 #homebanner-1 {
-    height: 301px;
+    height: 400px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
