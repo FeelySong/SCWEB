@@ -1,5 +1,5 @@
-var disp=1;var R1="<a href=http://wpa.qq.com/msgrd?v=3&uin=1975418259&site=qq&menu=yes target=_blank style=display:inline-block;height:283px; ><img src=images/zaixiankf.png  WIDTH=143 HEIGHT=283 /></a><p></p>"
-var R2="<a href=http://wpa.qq.com/msgrd?v=3&uin=1975418259&site=qq&menu=yes target=_blank><img src=images/kfqq.png WIDTH=143 HEIGHT=80 /></a><img src='images/close.png' onClick='javascript:window.hide()' width='143' height='31' border='0'  alt='¹Ø±Õ'>"
+var disp=1;var R1="<a href=http://wpa.qq.com/msgrd?v=3&uin=503144674&site=qq&menu=yes target=_blank style=display:inline-block;height:283px; ><img src=images/zaixiankf.png  WIDTH=143 HEIGHT=283 /></a><p></p>"
+var R2="<a href=http://wpa.qq.com/msgrd?v=3&uin=503144674&site=qq&menu=yes target=_blank><img src=images/kfqq.png WIDTH=143 HEIGHT=80 /></a><img src='images/close.png' onClick='javascript:window.hide()' width='143' height='31' border='0'  alt='¹Ø±Õ'>"
 if(disp==1)
 {lastScrollY=0;function heartBeat(){var diffY;if(document.documentElement&&document.documentElement.scrollTop)
 diffY=document.documentElement.scrollTop;else if(document.body)

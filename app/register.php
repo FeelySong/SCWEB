@@ -129,7 +129,7 @@ function LoginNow() {
             <div id="logo" class="l">
                     <h1 class="l"><a target="_self" href=""></a></h1>
                 </div>
-            <div class="nav"><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=1975418259&amp;Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&amp;Menu=yes" target="_blank" style="background: url(images/ptkefu.png) no-repeat top;" class="w_right"></a>
+            <div class="nav"><a href="http://wpa.qq.com/msgrd?V=3&amp;uin=503144674&amp;Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&amp;Menu=yes" target="_blank" style="background: url(images/ptkefu.png) no-repeat top;" class="w_right"></a>
                 </div>
         </div>
 		<div id="reg_content">
