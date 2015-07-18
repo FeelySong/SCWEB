@@ -171,8 +171,8 @@ html {overflow: hidden;}
                           <li id="nav_5" TITLE='查询游戏统计信息' ALT='查询游戏统计信息'><a target="mainframe" href="report_game.php"><span>&nbsp;</span></a></li>
                           <li id="nav_6" TITLE='查看各彩种奖金' ALT='查看各彩种奖金'><a target="mainframe" href="users_info.php"><span>&nbsp;</span></a></li>
                           <li id="nav_7" TITLE='常见问题说明' ALT='常见问题说明'><a target="mainframe" href="help_general.php"><span>&nbsp;</span></a></li>
-                          <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="csonline_addnew.php" target="_blank"><span>&nbsp;</span></a></li>
-//                          <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="http://wpa.qq.com/msgrd?V=3&uin=503144674&Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&Menu=yes&from=discuz" target="_blank"><span>&nbsp;</span></a></li>
+//                          <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="csonline_addnew.php" target="_blank"><span>&nbsp;</span></a></li>
+                          <li id="nav_8" TITLE='在线客服' ALT='在线客服'><a href="http://wpa.qq.com/msgrd?V=3&uin=503144674&Site=%E4%BA%91%E5%BD%A9%E5%A8%B1%E4%B9%90&Menu=yes&from=discuz" target="_blank"><span>&nbsp;</span></a></li>
                        </ul></div>
   </div>
 </div></td></tr></table>
