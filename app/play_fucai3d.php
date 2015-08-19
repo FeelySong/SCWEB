@@ -25,7 +25,7 @@ $signss=1;
 }
 
 if($dymd2<$stopstart){
-	$tnums=sprintf("%03d",date("z")+2);
+	$tnums=sprintf("%03d",date("z")+1);
 }
 if($dymd2>=$stopstart && $dymd2<=$stopend){
 	$dymd=date("Y",strtotime($stopend)+24*3600);
@@ -33,7 +33,7 @@ if($dymd2>=$stopstart && $dymd2<=$stopend){
 	$tnums=sprintf("%03d",date("z")+1-7);
 }
 if($dymd2>$stopstart){
-	$tnums=sprintf("%03d",date("z")+2-7-1);
+	$tnums=sprintf("%03d",date("z")+1-7);
 }
 
 $rows = mysql_fetch_array($rss);
