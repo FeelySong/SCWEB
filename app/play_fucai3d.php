@@ -25,7 +25,7 @@ $signss=1;
 }
 
 if($dymd2<$stopstart){
-	$tnums=sprintf("%03d",date("z")+1);
+	$tnums=sprintf("%03d",date("z")+2);
 }
 if($dymd2>=$stopstart && $dymd2<=$stopend){
 	$dymd=date("Y",strtotime($stopend)+24*3600);

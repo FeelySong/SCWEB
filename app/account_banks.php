@@ -237,7 +237,6 @@ function resizewindow(){
 	while ($row = mysql_fetch_array($rs)){
 ?>
   <tr align="center">
-    <!--<td>王华</td>-->
     <td><?=Get_bank($row['bankid'])?></td>
     <td>***************<?=substr($row['cardno'],-4)?></td>
     <td><?=$row['adddate']?></td>
